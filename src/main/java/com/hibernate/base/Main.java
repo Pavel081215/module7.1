@@ -6,6 +6,9 @@ import com.hibernate.base.controller.OrderController;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     private EmployeeController employeeController;
     private DishController dishController;
@@ -33,10 +36,19 @@ public class Main {
     private void start() {
         employeeController.createEmployee();
         dishController.createDish();
-        employeeController.getAllEmployee().forEach(System.out::println);
-        dishController.getAllDashes().forEach(System.out::println);
 
-        System.out.println(employeeController.getEmployeeByNama("Pavel"));
-        System.out.println(dishController.getDishByName("Plov"));
+        List<String> dishes2 = new ArrayList<>();
+        dishes2.add("Soup");
+        dishes2.add("Compot");
+        orderController.createOrder("Natasha", dishes2);
+
+        List<String> dishes = new ArrayList<>();
+        dishes.add("Plov");
+        dishes.add("Compot");
+        orderController.createOrder("Pavel", dishes);
+
+
+        /*orderController.getAllOrders().forEach(System.out::println);*/
+
     }
 }

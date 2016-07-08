@@ -54,11 +54,11 @@ public class DishController {
             dishDao.save(dish2);
         }
     }
-
+    @Transactional
     public List<Dish> getAllDashes(){
         return dishDao.findAll();
     }
-
+    @Transactional
     public Dish getDishByName(String name){
         return dishDao.findByName(name);
     }

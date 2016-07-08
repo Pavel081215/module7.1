@@ -4,7 +4,7 @@ package com.hibernate.base.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 
@@ -73,5 +73,15 @@ public class OrderName {
 
     public void setTime(Date time) {
         this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderName{" +
+                "waiter=" + waiter +
+                ", dishes=" + dishes +
+                ", table_number=" + table_number +
+                ", time=" + time +
+                '}';
     }
 }

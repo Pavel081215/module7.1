@@ -18,3 +18,161 @@
 2016-07-09 00:31:38 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
 2016-07-09 00:31:38 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
 2016-07-09 00:31:38 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:07:43 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:07:43 DEBUG SQL:92 - select max(id) from employee
+2016-07-09 01:07:43 DEBUG SQL:92 - insert into employee (name, phone_number, position, salary, surname, id) values (?, ?, ?, ?, ?, ?)
+2016-07-09 01:07:43 DEBUG SQL:92 - insert into employee (name, phone_number, position, salary, surname, id) values (?, ?, ?, ?, ?, ?)
+2016-07-09 01:07:43 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:07:43 DEBUG SQL:92 - select max(id) from dish
+2016-07-09 01:07:43 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:07:43 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:07:43 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:07:43 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:07:43 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:07:43 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:07:43 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:07:44 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:07:44 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:07:44 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:07:44 ERROR SqlExceptionHelper:131 - ERROR: duplicate key value violates unique constraint "dish_to_order_pkey"
+  Detail: Key (order_id)=(1) already exists.
+2016-07-09 01:07:44 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-07-09 01:09:39 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:09:39 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:09:39 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:09:39 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:09:39 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:09:39 DEBUG SQL:92 - select ordername0_.id as id1_3_, ordername0_.table_number as table_nu2_3_, ordername0_.time as time3_3_, ordername0_.employee_id as employee4_3_ from OrderName ordername0_
+2016-07-09 01:09:39 DEBUG SQL:92 - select employee0_.id as id1_2_0_, employee0_.name as name2_2_0_, employee0_.phone_number as phone_nu3_2_0_, employee0_.position as position4_2_0_, employee0_.salary as salary5_2_0_, employee0_.surname as surname6_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-09 01:13:27 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:13:27 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:13:27 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:13:27 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:13:27 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:13:27 DEBUG SQL:92 - select ordername0_.id as id1_3_, ordername0_.table_number as table_nu2_3_, ordername0_.time as time3_3_, ordername0_.employee_id as employee4_3_ from OrderName ordername0_
+2016-07-09 01:13:27 DEBUG SQL:92 - select employee0_.id as id1_2_0_, employee0_.name as name2_2_0_, employee0_.phone_number as phone_nu3_2_0_, employee0_.position as position4_2_0_, employee0_.salary as salary5_2_0_, employee0_.surname as surname6_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-09 01:16:03 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:16:03 DEBUG SQL:92 - select max(id) from employee
+2016-07-09 01:16:03 DEBUG SQL:92 - insert into employee (name, phone_number, position, salary, surname, id) values (?, ?, ?, ?, ?, ?)
+2016-07-09 01:16:03 DEBUG SQL:92 - insert into employee (name, phone_number, position, salary, surname, id) values (?, ?, ?, ?, ?, ?)
+2016-07-09 01:16:03 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:16:03 DEBUG SQL:92 - select max(id) from dish
+2016-07-09 01:16:03 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:16:03 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:16:03 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:16:03 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:16:03 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:16:03 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:16:03 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:16:04 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:16:04 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:16:04 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:16:04 ERROR SqlExceptionHelper:131 - ERROR: duplicate key value violates unique constraint "dish_to_order_pkey"
+  Detail: Key (order_id)=(1) already exists.
+2016-07-09 01:16:04 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-07-09 01:18:56 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:18:56 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:18:56 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:18:56 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:18:56 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:18:56 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:18:56 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:18:56 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:18:56 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:18:56 ERROR SqlExceptionHelper:131 - ERROR: duplicate key value violates unique constraint "dish_to_order_pkey"
+  Detail: Key (order_id)=(1) already exists.
+2016-07-09 01:18:56 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-07-09 01:20:11 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:20:11 DEBUG SQL:92 - select max(id) from employee
+2016-07-09 01:20:11 DEBUG SQL:92 - insert into employee (name, phone_number, position, salary, surname, id) values (?, ?, ?, ?, ?, ?)
+2016-07-09 01:20:11 DEBUG SQL:92 - insert into employee (name, phone_number, position, salary, surname, id) values (?, ?, ?, ?, ?, ?)
+2016-07-09 01:20:11 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:20:11 DEBUG SQL:92 - select max(id) from dish
+2016-07-09 01:20:11 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:20:11 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:20:11 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-09 01:20:11 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:20:11 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:20:11 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:20:11 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:20:11 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:20:11 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:20:11 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:20:11 ERROR SqlExceptionHelper:131 - ERROR: duplicate key value violates unique constraint "dish_to_order_pkey"
+  Detail: Key (order_id)=(1) already exists.
+2016-07-09 01:20:11 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-07-09 01:21:27 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:21:27 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:21:27 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:21:27 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:21:27 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:21:27 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:21:27 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:21:27 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:21:27 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:21:27 ERROR SqlExceptionHelper:131 - ERROR: duplicate key value violates unique constraint "dish_to_order_pkey"
+  Detail: Key (order_id)=(1) already exists.
+2016-07-09 01:21:27 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-07-09 01:32:01 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:32:01 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:32:01 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:32:01 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:32:01 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:32:01 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:32:01 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:32:01 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:32:01 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:32:01 ERROR SqlExceptionHelper:131 - ERROR: duplicate key value violates unique constraint "dish_to_order_pkey"
+  Detail: Key (order_id)=(1) already exists.
+2016-07-09 01:32:01 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-07-09 01:33:33 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:33:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:33:33 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:33:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:33:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:33:33 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:33:33 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:33:33 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:33:33 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:33:33 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:33:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:33:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:33:33 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:33:33 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:33:33 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:33:33 DEBUG SQL:92 - select ordername0_.id as id1_3_, ordername0_.table_number as table_nu2_3_, ordername0_.time as time3_3_, ordername0_.employee_id as employee4_3_ from OrderName ordername0_
+2016-07-09 01:33:33 DEBUG SQL:92 - select employee0_.id as id1_2_0_, employee0_.name as name2_2_0_, employee0_.phone_number as phone_nu3_2_0_, employee0_.position as position4_2_0_, employee0_.salary as salary5_2_0_, employee0_.surname as surname6_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-09 01:33:33 DEBUG SQL:92 - select employee0_.id as id1_2_0_, employee0_.name as name2_2_0_, employee0_.phone_number as phone_nu3_2_0_, employee0_.position as position4_2_0_, employee0_.salary as salary5_2_0_, employee0_.surname as surname6_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-09 01:34:09 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:34:09 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:34:09 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:34:09 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:34:09 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:34:09 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:34:09 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:34:09 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:34:09 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:34:09 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:34:09 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:34:09 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:34:09 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:34:09 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:34:09 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:34:09 DEBUG SQL:92 - select ordername0_.id as id1_3_, ordername0_.table_number as table_nu2_3_, ordername0_.time as time3_3_, ordername0_.employee_id as employee4_3_ from OrderName ordername0_
+2016-07-09 01:34:09 DEBUG SQL:92 - select employee0_.id as id1_2_0_, employee0_.name as name2_2_0_, employee0_.phone_number as phone_nu3_2_0_, employee0_.position as position4_2_0_, employee0_.salary as salary5_2_0_, employee0_.surname as surname6_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-09 01:34:09 DEBUG SQL:92 - select employee0_.id as id1_2_0_, employee0_.name as name2_2_0_, employee0_.phone_number as phone_nu3_2_0_, employee0_.position as position4_2_0_, employee0_.salary as salary5_2_0_, employee0_.surname as surname6_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-09 01:34:33 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-09 01:34:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-09 01:34:33 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:34:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:34:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:34:33 DEBUG SQL:92 - select max(id) from OrderName
+2016-07-09 01:34:33 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:34:33 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:34:33 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:34:33 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_ where employee0_.name like ?
+2016-07-09 01:34:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:34:33 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
+2016-07-09 01:34:33 DEBUG SQL:92 - insert into OrderName (table_number, time, employee_id, id) values (?, ?, ?, ?)
+2016-07-09 01:34:33 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)
+2016-07-09 01:34:33 DEBUG SQL:92 - insert into dish_to_order (order_id, dish_id) values (?, ?)

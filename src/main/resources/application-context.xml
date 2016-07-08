@@ -30,6 +30,8 @@
 
     <bean name="controllerOrders" class="com.hibernate.base.controller.OrderController">
         <property name="orderNameDao" ref="horderdao"/>
+        <property name="dishDao" ref="hdishdao"/>
+        <property name="employeeDao" ref="hemployeeydao"/>
     </bean>
 
     <bean name="horderdao" class="com.hibernate.base.dao.hibernate.HOrderNameDao">
