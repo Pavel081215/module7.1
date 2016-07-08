@@ -58,4 +58,8 @@ public class DishController {
     public List<Dish> getAllDashes(){
         return dishDao.findAll();
     }
+
+    public Dish getDishByName(String name){
+        return dishDao.findByName(name);
+    }
 }

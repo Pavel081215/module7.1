@@ -20,4 +20,7 @@ public interface DishDao {
     List<Dish> findAll ();
     @Transactional
     void remove(Dish dish);
+    @Transactional
+    Dish findByName(String name);
+
 }
