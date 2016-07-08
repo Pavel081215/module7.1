@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="main.java.com.base.Main" name="main">
+        <property name="EmployeeController" ref="controller"/>
+    </bean>
+
+    <bean name="controller" class="com.hibernate.base.controller.EmployeeController">
+        <property name="hEmployeeDao" ref="hemployeeydao"/>
+    </bean>
+
+    <bean name="hemployeeydao" class="com.hibernate.base.dao.hibernate.HEmployeeDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
