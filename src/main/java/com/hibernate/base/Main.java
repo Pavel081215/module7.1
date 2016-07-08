@@ -35,5 +35,7 @@ public class Main {
         dishController.createDish();
         employeeController.getAllEmployee().forEach(System.out::println);
         dishController.getAllDashes().forEach(System.out::println);
+
+        System.out.println(employeeController.getEmployeeByNama("Pavel"));
     }
 }

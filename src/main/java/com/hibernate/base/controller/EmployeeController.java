@@ -37,11 +37,28 @@ public class EmployeeController {
         if (!employeeSet.contains(employee)) {
             employeeDao.save(employee);
         }
+
+        Employee employee1 = new Employee();
+        employee1.setId(1);
+        employee1.setName("Natasha");
+        employee1.setPhoneNumber("3331023");
+        employee1.setPosition(Position.cleaner);
+        employee1.setSurname("Zagreb");
+        employee1.setSalary(50000.0F);
+        if (!employeeSet.contains(employee1)) {
+            employeeDao.save(employee1);
+
+        }
     }
 
     @Transactional
     public List<Employee> getAllEmployee() {
         return employeeDao.findAll();
+    }
+
+    @Transactional
+    public Employee getEmployeeByNama(String name) {
+        return employeeDao.findByName(name);
     }
 
 

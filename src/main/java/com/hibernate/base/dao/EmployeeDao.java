@@ -17,4 +17,7 @@ public interface EmployeeDao {
     List<Employee> findAll ();
     @Transactional
     void remove(Employee employee);
+    @Transactional
+    Employee findByName(String name);
+
 }
