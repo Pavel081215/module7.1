@@ -1,0 +1,8 @@
+*.iml
+out/*
+.idea/*
+*.class
+*.name
+
+/target/
+/.idea/
