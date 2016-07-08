@@ -1,6 +1,7 @@
 package com.hibernate.base.dao.hibernate;
 
-import com.hibernate.base.dao.EmployeeDao;
+import com.hibernate.base.dao.DishDao;
+import com.hibernate.base.model.Dish;
 import com.hibernate.base.model.Employee;
 import org.hibernate.SessionFactory;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,8 +11,7 @@ import java.util.List;
 /**
  * Created by Pavel on 08.07.2016.
  */
-public class HEmployeeDao implements EmployeeDao {
-
+public class HDishDao implements DishDao {
 
     private SessionFactory sessionFactory;
 
@@ -21,25 +21,23 @@ public class HEmployeeDao implements EmployeeDao {
 
     @Transactional
     @Override
-    public void save(Employee employee) {
-        sessionFactory.getCurrentSession().save(employee);
+    public void save(Dish dish) {
+        sessionFactory.getCurrentSession().save(dish);
+
     }
     @Transactional
     @Override
     public Employee load(Long id) {
         return null;
     }
-
     @Transactional
     @Override
-    public List<Employee> findAll() {
-       return sessionFactory.getCurrentSession().createQuery("select e from Employee e").list() ;
+    public List<Dish> findAll() {
+        return sessionFactory.getCurrentSession().createQuery("select e from Dish e").list() ;
     }
-
     @Transactional
     @Override
-    public void remove(Employee employee) {
-        sessionFactory.getCurrentSession().delete(employee);
-
+    public void remove(Dish dish) {
+        sessionFactory.getCurrentSession().delete(dish);
     }
 }

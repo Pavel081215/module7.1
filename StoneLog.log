@@ -1,0 +1,34 @@
+2016-07-08 23:21:46 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:21:46 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:21:46 ERROR SqlExceptionHelper:131 - ERROR: permission denied for relation dish
+2016-07-08 23:48:11 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:48:11 DEBUG SQL:92 - select max(id) from dish
+2016-07-08 23:48:11 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:48:11 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:48:11 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:50:02 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:50:02 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:50:02 DEBUG SQL:92 - select max(id) from dish
+2016-07-08 23:50:02 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:50:02 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:50:02 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:50:02 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:50:02 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:52:43 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:52:43 DEBUG SQL:92 - select max(id) from employee
+2016-07-08 23:52:43 DEBUG SQL:92 - insert into employee (name, phone_number, position, salary, surname, id) values (?, ?, ?, ?, ?, ?)
+2016-07-08 23:52:43 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:52:43 DEBUG SQL:92 - select max(id) from dish
+2016-07-08 23:52:43 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:52:43 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:52:43 DEBUG SQL:92 - insert into dish (dish_category, name, price, weigth, id) values (?, ?, ?, ?, ?)
+2016-07-08 23:52:43 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:52:43 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:55:52 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:55:53 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:55:53 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:55:53 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:58:20 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:58:20 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
+2016-07-08 23:58:20 DEBUG SQL:92 - select employee0_.id as id1_2_, employee0_.name as name2_2_, employee0_.phone_number as phone_nu3_2_, employee0_.position as position4_2_, employee0_.salary as salary5_2_, employee0_.surname as surname6_2_ from employee employee0_
+2016-07-08 23:58:20 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_

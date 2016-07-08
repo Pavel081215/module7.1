@@ -2,20 +2,39 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="byName">
 
     <bean class="com.hibernate.base.Main" name="main">
-        <property name="EmployeeController" ref="controller"/>
+        <property name="employeeController" ref="controller"/>
+        <property name="dishController" ref="controllerDish"/>
+        <property name="orderController" ref="controllerOrders"/>
     </bean>
 
     <bean name="controller" class="com.hibernate.base.controller.EmployeeController">
-        <property name="hEmployeeDao" ref="hemployeeydao"/>
+        <property name="employeeDao" ref="hemployeeydao"/>
     </bean>
 
     <bean name="hemployeeydao" class="com.hibernate.base.dao.hibernate.HEmployeeDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
+
+    <bean name="controllerDish" class="com.hibernate.base.controller.DishController">
+        <property name="dishDao" ref="hdishdao"/>
+    </bean>
+
+    <bean name="hdishdao" class="com.hibernate.base.dao.hibernate.HDishDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="controllerOrders" class="com.hibernate.base.controller.OrderController">
+        <property name="orderNameDao" ref="horderdao"/>
+    </bean>
+
+    <bean name="horderdao" class="com.hibernate.base.dao.hibernate.HOrderNameDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
 
 </beans>
 

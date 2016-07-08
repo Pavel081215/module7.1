@@ -1,6 +1,8 @@
 package com.hibernate.base.dao;
 
+import com.hibernate.base.model.Dish;
 import com.hibernate.base.model.Employee;
+import com.hibernate.base.model.OrderName;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -8,13 +10,13 @@ import java.util.List;
 /**
  * Created by Pavel on 08.07.2016.
  */
-public interface EmployeeDao {
+public interface OrderNameDao {
     @Transactional
-    void save(Employee employee);
+    void save(OrderName orderName);
     @Transactional
     Employee load (Long id);
     @Transactional
-    List<Employee> findAll ();
+    List<OrderName> findAll ();
     @Transactional
-    void remove(Employee employee);
+    void remove(OrderName orderName);
 }
