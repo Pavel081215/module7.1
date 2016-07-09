@@ -1,6 +1,10 @@
 package com.hibernate.base.model;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import java.util.List;
@@ -8,9 +12,9 @@ import java.util.List;
 @Entity
 public class Waiter extends Employee {
 
-    @OneToMany()
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "employee_id")
-
+    @Fetch(FetchMode.JOIN)
     private List<OrderName> orderNames;
 
     public List<OrderName> getOrderNames() {
