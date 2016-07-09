@@ -58,4 +58,10 @@ public class OrderController {
     public List<OrderName> getAllOrders(){
         return orderNameDao.findAll();
     }
+
+    @Transactional
+    public  void print ( List<OrderName> orderNames){
+        orderNames.forEach(System.out::println);
+    }
+
 }
