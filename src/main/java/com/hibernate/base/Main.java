@@ -35,7 +35,7 @@ public class Main {
     }
 
     private void start() {
-        employeeController.createEmployee();
+       /* employeeController.createEmployee();
         dishController.createDish();
 
         List<String> dishes2 = new ArrayList<>();
@@ -46,10 +46,10 @@ public class Main {
         List<String> dishes = new ArrayList<>();
         dishes.add("Plov");
         dishes.add("Compot");
-        orderController.createOrder("Pavel", dishes);
+        orderController.createOrder("Pavel", dishes);*/
 
 
-
+        orderController.print();
 
     }
 }

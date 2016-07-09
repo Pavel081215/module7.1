@@ -60,8 +60,9 @@ public class OrderController {
     }
 
     @Transactional
-    public  void print ( List<OrderName> orderNames){
-        orderNames.forEach(System.out::println);
+    public  void print ( ){
+
+       getAllOrders().forEach(System.out::println);
     }
 
 }
