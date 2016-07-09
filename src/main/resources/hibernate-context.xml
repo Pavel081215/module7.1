@@ -28,6 +28,8 @@
               <property name="hibernateProperties">
                      <value>=hibernate.dialect=org.hibernate.dialect.PostgresSQL9Dialect</value>
               </property>
+
+
        </bean>
 
 

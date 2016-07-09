@@ -53,4 +53,9 @@ public class HEmployeeDao implements EmployeeDao {
         query.setParameter("name", name);
         return (Employee) query.uniqueResult();
     }
+
+    @Override
+    public void removeAll() {
+        sessionFactory.getCurrentSession().createQuery("delete from Employee").executeUpdate();
+    }
 }

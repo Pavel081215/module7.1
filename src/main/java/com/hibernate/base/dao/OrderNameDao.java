@@ -13,10 +13,17 @@ import java.util.List;
 public interface OrderNameDao {
     @Transactional
     void save(OrderName orderName);
+
     @Transactional
-    Employee load (Long id);
+    Employee load(Long id);
+
     @Transactional
-    List<OrderName> findAll ();
+    List<OrderName> findAll();
+
     @Transactional
     void remove(OrderName orderName);
+
+    @Transactional
+    void removeAll();
 }
+

@@ -62,4 +62,8 @@ public class DishController {
     public Dish getDishByName(String name){
         return dishDao.findByName(name);
     }
+    @Transactional
+    public void removeAll(){
+        dishDao.removeAll();
+    }
 }

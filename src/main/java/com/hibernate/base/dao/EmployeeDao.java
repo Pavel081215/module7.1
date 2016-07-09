@@ -20,4 +20,8 @@ public interface EmployeeDao {
     @Transactional
     Employee findByName(String name);
 
+    @Transactional
+    void removeAll();
+
+
 }

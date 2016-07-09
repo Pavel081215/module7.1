@@ -50,4 +50,9 @@ public class HDishDao implements DishDao {
         query.setParameter("name", name);
         return (Dish) query.uniqueResult();
     }
+
+    @Override
+    public void removeAll() {
+        sessionFactory.getCurrentSession().createQuery("delete from Dish").executeUpdate();
+    }
 }

@@ -61,8 +61,13 @@ public class OrderController {
 
     @Transactional
     public  void print ( ){
-
        getAllOrders().forEach(System.out::println);
+    }
+
+    @Transactional
+    public void remove(){
+        orderNameDao.removeAll();
+
     }
 
 }

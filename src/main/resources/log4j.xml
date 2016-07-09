@@ -21,10 +21,19 @@
         </layout>
     </appender>
 
-    <logger name="org.hibernate.SQL">
-        <level value="debug" />
 
+
+    <logger name="org.hibernate.SQL">
+        <level value="debug"/>
+        <appender-ref ref="SQLROLLINGFILE" />
     </logger>
+
+    <logger name="org.hibernate.type">
+
+        <level value="TRACE"/>
+        <appender-ref ref="SQLROLLINGFILE" />
+    </logger>
+
 
 
 

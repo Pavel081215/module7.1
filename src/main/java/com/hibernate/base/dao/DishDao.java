@@ -22,5 +22,7 @@ public interface DishDao {
     void remove(Dish dish);
     @Transactional
     Dish findByName(String name);
+    @Transactional
+    void removeAll();
 
 }

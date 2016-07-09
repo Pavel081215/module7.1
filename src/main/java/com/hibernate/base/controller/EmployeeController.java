@@ -61,5 +61,10 @@ public class EmployeeController {
         return employeeDao.findByName(name);
     }
 
+    @Transactional
+    public void removeAll(){
+        employeeDao.removeAll();
+    }
+
 
 }

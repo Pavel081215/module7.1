@@ -35,21 +35,21 @@ public class Main {
     }
 
     private void start() {
-       /* employeeController.createEmployee();
+      /*  Действия для модуля 7.1*/
+     /*  employeeController.createEmployee();
         dishController.createDish();
-
-        List<String> dishes2 = new ArrayList<>();
+         List<String> dishes2 = new ArrayList<>();
         dishes2.add("Soup");
         dishes2.add("Compot");
         orderController.createOrder("Natasha", dishes2);
-
         List<String> dishes = new ArrayList<>();
         dishes.add("Plov");
         dishes.add("Compot");
         orderController.createOrder("Pavel", dishes);*/
+       /* orderController.print();*/
 
-
-        orderController.print();
-
+        orderController.remove();
+        employeeController.removeAll();
+        dishController.removeAll();
     }
 }

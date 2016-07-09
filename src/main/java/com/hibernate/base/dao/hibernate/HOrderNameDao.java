@@ -35,9 +35,15 @@ public class HOrderNameDao implements OrderNameDao {
     public List<OrderName> findAll() {
         return sessionFactory.getCurrentSession().createQuery("select e from OrderName e").list() ;
     }
+
     @Transactional
     @Override
     public void remove(OrderName orderName) {
         sessionFactory.getCurrentSession().delete(orderName);
+    }
+
+    @Override
+    public void removeAll() {
+        sessionFactory.getCurrentSession().createQuery("delete from OrderName").executeUpdate() ;
     }
 }
