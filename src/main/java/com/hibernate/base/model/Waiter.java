@@ -8,8 +8,6 @@ import java.util.List;
 @Entity
 public class Waiter extends Employee {
 
-
-
     @OneToMany()
     @JoinColumn(name = "employee_id")
 
@@ -23,11 +21,17 @@ public class Waiter extends Employee {
         this.orderNames = orderNames;
     }
 
-
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Waiter{");
-        sb.append('}');
+        StringBuilder sb = new StringBuilder();
+        sb.append("Waiter {\n");
+        sb.append("    id = ").append(getId()).append("\n");
+        sb.append("    name = ").append(getName()).append("\n");
+        sb.append("    surname = ").append(getSurname()).append("\n");
+        sb.append("    order {\n");
+        orderNames.forEach(orderName -> sb.append("          ").append(orderName).append("\n"));
+        sb.append("     {\n");
+        sb.append("{\n");
         return sb.toString();
     }
 }

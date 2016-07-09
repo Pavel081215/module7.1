@@ -39,7 +39,7 @@ public class EmployeeController {
             employeeDao.save(employee);
         }
 
-        Employee employee1 = new Waiter();
+        Waiter employee1 = new Waiter();
         employee1.setId(1);
         employee1.setName("Natasha");
         employee1.setPhoneNumber("3331023");
@@ -65,6 +65,11 @@ public class EmployeeController {
     @Transactional
     public void removeAll(){
         employeeDao.removeAll();
+    }
+
+    @Transactional
+    public void printWaiter(){
+        getAllEmployee().forEach(System.out::println);
     }
 
 

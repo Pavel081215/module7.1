@@ -77,11 +77,11 @@ public class OrderName {
 
     @Override
     public String toString() {
-        return "OrderName{" +
-                "waiter=" + waiter +
-                ", dishes=" + dishes +
-                ", table_number=" + table_number +
-                ", time=" + time +
-                '}';
+        StringBuilder sb = new StringBuilder("OrderName{");
+        sb.append(", dishes=").append(dishes);
+        sb.append(", table_number=").append(table_number);
+        sb.append(", time=").append(time);
+        sb.append('}');
+        return sb.toString();
     }
 }

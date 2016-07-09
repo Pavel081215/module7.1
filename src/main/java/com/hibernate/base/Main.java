@@ -62,8 +62,10 @@ public class Main {
             List<String> dishes = new ArrayList<>();
             dishes.add("Plov");
             dishes.add("Compot");
-            orderController.createOrder("Pavel", dishes);
-            orderController.print();
+            orderController.createOrder("Natasha", dishes);
+
+           /* orderController.print();*/
+            employeeController.printWaiter();
         }
 
 
