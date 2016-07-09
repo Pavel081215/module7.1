@@ -9,6 +9,8 @@
         <property name="employeeController" ref="controller"/>
         <property name="dishController" ref="controllerDish"/>
         <property name="orderController" ref="controllerOrders"/>
+        <property name="removeInit" value="true"/>
+        <property name="saveInit" value="true"/>
     </bean>
 
     <bean name="controller" class="com.hibernate.base.controller.EmployeeController">

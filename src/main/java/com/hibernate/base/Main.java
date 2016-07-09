@@ -14,6 +14,18 @@ public class Main {
     private DishController dishController;
     private OrderController orderController;
 
+    private boolean removeInit;
+
+    private boolean saveInit;
+
+    public void setRemoveInit(boolean removeInit) {
+        this.removeInit = removeInit;
+    }
+
+    public void setSaveInit(boolean saveInit) {
+        this.saveInit = saveInit;
+    }
+
     public void setEmployeeController(EmployeeController employeeController) {
         this.employeeController = employeeController;
     }
@@ -35,21 +47,25 @@ public class Main {
     }
 
     private void start() {
-      /*  Действия для модуля 7.1*/
-     /*  employeeController.createEmployee();
-        dishController.createDish();
-         List<String> dishes2 = new ArrayList<>();
-        dishes2.add("Soup");
-        dishes2.add("Compot");
-        orderController.createOrder("Natasha", dishes2);
-        List<String> dishes = new ArrayList<>();
-        dishes.add("Plov");
-        dishes.add("Compot");
-        orderController.createOrder("Pavel", dishes);*/
-       /* orderController.print();*/
+        if (removeInit) {
+            orderController.remove();
+            employeeController.removeAll();
+            dishController.removeAll();
+        }
+        if (saveInit) {
+            employeeController.createEmployee();
+            dishController.createDish();
+            List<String> dishes2 = new ArrayList<>();
+            dishes2.add("Soup");
+            dishes2.add("Compot");
+            orderController.createOrder("Natasha", dishes2);
+            List<String> dishes = new ArrayList<>();
+            dishes.add("Plov");
+            dishes.add("Compot");
+            orderController.createOrder("Pavel", dishes);
+            orderController.print();
+        }
 
-        orderController.remove();
-        employeeController.removeAll();
-        dishController.removeAll();
+
     }
 }

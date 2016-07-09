@@ -4,6 +4,7 @@ import com.hibernate.base.dao.EmployeeDao;
 import com.hibernate.base.model.Employee;
 import com.hibernate.base.model.Position;
 import com.hibernate.base.dao.hibernate.HEmployeeDao;
+import com.hibernate.base.model.Waiter;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
@@ -38,7 +39,7 @@ public class EmployeeController {
             employeeDao.save(employee);
         }
 
-        Employee employee1 = new Employee();
+        Employee employee1 = new Waiter();
         employee1.setId(1);
         employee1.setName("Natasha");
         employee1.setPhoneNumber("3331023");
