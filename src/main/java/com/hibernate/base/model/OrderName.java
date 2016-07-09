@@ -21,7 +21,7 @@ public class OrderName {
     @JoinColumn(name = "employee_id")
     private Employee waiter;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "dish_to_order",
             joinColumns = @JoinColumn(name = "order_id"),

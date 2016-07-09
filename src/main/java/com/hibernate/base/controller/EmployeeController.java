@@ -39,7 +39,7 @@ public class EmployeeController {
             employeeDao.save(employee);
         }
 
-        Waiter employee1 = new Waiter();
+        Employee employee1 = new Employee();
         employee1.setId(1);
         employee1.setName("Natasha");
         employee1.setPhoneNumber("3331023");

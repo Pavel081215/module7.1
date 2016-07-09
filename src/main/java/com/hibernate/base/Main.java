@@ -65,9 +65,10 @@ public class Main {
             orderController.createOrder("Natasha", dishes);
 
            /* orderController.print();*/
-            employeeController.printWaiter();
+          /*  employeeController.printWaiter();*/
         }
 
+        orderController.getAllOrders().forEach(System.out::println);
 
     }
 }
