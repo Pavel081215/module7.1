@@ -10,7 +10,7 @@
         <property name="dishController" ref="controllerDish"/>
         <property name="orderController" ref="controllerOrders"/>
         <property name="removeInit" value="true"/>
-        <property name="saveInit" value="false"/>
+        <property name="saveInit" value="true"/>
 
     </bean>
 
@@ -49,6 +49,11 @@
     <bean name="hIngredientDao" class="com.hibernate.base.dao.hibernate.HIngredientDao"/>
 
     <bean name="ingredientcontroller" class="com.hibernate.base.controller.IngredientController"/>
+
+
+    <bean name="hmenudao" class="com.hibernate.base.dao.hibernate.HMemuDao"/>
+
+    <bean name="menucontroller" class="com.hibernate.base.controller.MenuController"/>
 
 </beans>
 

@@ -13,6 +13,11 @@ public class Main {
     private OrderController orderController;
     private StockController stonecontroller;
     private IngredientController ingredientcontroller;
+    private MenuController menucontroller;
+
+    public void setMenucontroller(MenuController menucontroller) {
+        this.menucontroller = menucontroller;
+    }
 
     public void setStonecontroller(StockController stonecontroller) {
         this.stonecontroller = stonecontroller;
@@ -83,12 +88,12 @@ public class Main {
             orderController.createOrder("Natasha", dishes);
             orderController.print();
             employeeController.printWaiter();
-            /*orderController.getAllOrders().forEach(System.out::println);*/
-
             List<String> ingredients = new ArrayList<>();
             ingredients.add("cabbage");
             ingredients.add("tomatoes");
             stonecontroller.createStoke(ingredients);
+
+            menucontroller.createMenu();
 
         }
 

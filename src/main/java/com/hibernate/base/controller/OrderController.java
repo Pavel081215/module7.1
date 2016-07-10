@@ -46,7 +46,7 @@ public class OrderController {
 
     }
     @Transactional
-    private List<Dish> createDishes(List<String> dishes) {
+    public List<Dish> createDishes(List<String> dishes) {
         List<Dish> result = new ArrayList<>();
         for (String dishName : dishes) {
             result.add(dishDao.findByName(dishName));
