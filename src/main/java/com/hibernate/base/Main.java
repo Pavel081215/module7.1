@@ -1,8 +1,6 @@
 package com.hibernate.base;
 
-import com.hibernate.base.controller.DishController;
-import com.hibernate.base.controller.EmployeeController;
-import com.hibernate.base.controller.OrderController;
+import com.hibernate.base.controller.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,6 +11,16 @@ public class Main {
     private EmployeeController employeeController;
     private DishController dishController;
     private OrderController orderController;
+    private StockController stonecontroller;
+    private IngredientController ingredientcontroller;
+
+    public void setStonecontroller(StockController stonecontroller) {
+        this.stonecontroller = stonecontroller;
+    }
+
+    public void setIngredientcontroller(IngredientController ingredientcontroller) {
+        this.ingredientcontroller = ingredientcontroller;
+    }
 
     private boolean removeInit;
 
@@ -51,6 +59,8 @@ public class Main {
             orderController.remove();
             employeeController.removeAll();
             dishController.removeAll();
+            ingredientcontroller.removeAll();
+
         }
         if (saveInit) {
             employeeController.createEmployee();
@@ -63,12 +73,15 @@ public class Main {
             dishes.add("Plov");
             dishes.add("Compot");
             orderController.createOrder("Natasha", dishes);
-
-           /* orderController.print();*/
-          /*  employeeController.printWaiter();*/
+            orderController.print();
+            employeeController.printWaiter();
+            /*orderController.getAllOrders().forEach(System.out::println);*/
         }
 
-        orderController.getAllOrders().forEach(System.out::println);
-
+        ingredientcontroller.createIngredient();
+        List<String> ingredients = new ArrayList<>();
+        ingredients.add("cabbage");
+        ingredients.add("tomatoes");
+        stonecontroller.createStoke(ingredients);
     }
 }

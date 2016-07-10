@@ -9,8 +9,9 @@
         <property name="employeeController" ref="controller"/>
         <property name="dishController" ref="controllerDish"/>
         <property name="orderController" ref="controllerOrders"/>
-        <property name="removeInit" value="true"/>
-        <property name="saveInit" value="true"/>
+        <property name="removeInit" value="false"/>
+        <property name="saveInit" value="false"/>
+
     </bean>
 
     <bean name="controller" class="com.hibernate.base.controller.EmployeeController">
@@ -39,6 +40,15 @@
     <bean name="horderdao" class="com.hibernate.base.dao.hibernate.HOrderNameDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
+
+
+    <bean name="stockDao" class="com.hibernate.base.dao.hibernate.HStockDao"/>
+
+     <bean name="stonecontroller" class="com.hibernate.base.controller.StockController"/>
+
+    <bean name="hIngredientDao" class="com.hibernate.base.dao.hibernate.HIngredientDao"/>
+
+    <bean name="ingredientcontroller" class="com.hibernate.base.controller.IngredientController"/>
 
 </beans>
 
