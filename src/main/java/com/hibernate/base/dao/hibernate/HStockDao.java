@@ -42,7 +42,7 @@ public class HStockDao implements StockDao {
     @Transactional
     @Override
     public void removeAll() {
-        sessionFactory.getCurrentSession().createQuery("delete from Stoke").executeUpdate() ;
+        sessionFactory.getCurrentSession().createQuery("delete from Stock").executeUpdate() ;
     }
 
     @Override

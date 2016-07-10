@@ -3,6 +3,7 @@ package com.hibernate.base.model;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -30,7 +31,21 @@ public class Dish {
     @Column(name = "weigth")
     private Float weigth;
 
+    @ManyToMany()
+    @JoinTable(
+            name = "ingredient_to_dish",
+            joinColumns = @JoinColumn(name = "dish_id"),
+            inverseJoinColumns = @JoinColumn(name = "ingredient_id")
+    )
+    private List<Ingredient> ingredients;
 
+    public List<Ingredient> getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(List<Ingredient> ingredients) {
+        this.ingredients = ingredients;
+    }
 
     public long getId() {
         return id;

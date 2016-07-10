@@ -9,7 +9,7 @@
         <property name="employeeController" ref="controller"/>
         <property name="dishController" ref="controllerDish"/>
         <property name="orderController" ref="controllerOrders"/>
-        <property name="removeInit" value="false"/>
+        <property name="removeInit" value="true"/>
         <property name="saveInit" value="false"/>
 
     </bean>

@@ -58,13 +58,21 @@ public class Main {
         if (removeInit) {
             orderController.remove();
             employeeController.removeAll();
+            stonecontroller.remove();
             dishController.removeAll();
+
             ingredientcontroller.removeAll();
+
 
         }
         if (saveInit) {
+            ingredientcontroller.createIngredient();
+
+
             employeeController.createEmployee();
+
             dishController.createDish();
+
             List<String> dishes2 = new ArrayList<>();
             dishes2.add("Soup");
             dishes2.add("Compot");
@@ -76,12 +84,15 @@ public class Main {
             orderController.print();
             employeeController.printWaiter();
             /*orderController.getAllOrders().forEach(System.out::println);*/
+
+            List<String> ingredients = new ArrayList<>();
+            ingredients.add("cabbage");
+            ingredients.add("tomatoes");
+            stonecontroller.createStoke(ingredients);
+
         }
 
-        ingredientcontroller.createIngredient();
-        List<String> ingredients = new ArrayList<>();
-        ingredients.add("cabbage");
-        ingredients.add("tomatoes");
-        stonecontroller.createStoke(ingredients);
+
+
     }
 }

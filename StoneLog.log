@@ -800,3 +800,5 @@ java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc4.Jdbc4Conne
 2016-07-10 16:19:38 ERROR SqlExceptionHelper:131 - ERROR: duplicate key value violates unique constraint "ingredient_to_stock_pkey"
   Detail: Key (stock_id)=(1) already exists.
 2016-07-10 16:19:38 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-07-10 21:25:34 ERROR SqlExceptionHelper:131 - ERROR: update or delete on table "ingredient" violates foreign key constraint "dish_to_order_ingredient_id" on table "ingredient_to_stock"
+  Detail: Key (id)=(1) is still referenced from table "ingredient_to_stock".
