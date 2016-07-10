@@ -47,6 +47,9 @@ public class Stock {
     public void setName(String name) {
         this.name = name;
     }
+
+
+
 }
 
 
