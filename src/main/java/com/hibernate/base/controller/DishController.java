@@ -3,10 +3,7 @@ package com.hibernate.base.controller;
 import com.hibernate.base.dao.DishDao;
 import com.hibernate.base.dao.IngredientDao;
 import com.hibernate.base.dao.hibernate.HDishDao;
-import com.hibernate.base.model.Dish;
-import com.hibernate.base.model.DishCategory;
-import com.hibernate.base.model.Employee;
-import com.hibernate.base.model.Ingredient;
+import com.hibernate.base.model.*;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
@@ -32,15 +29,15 @@ public class DishController {
     @Transactional
     public void createDish() {
         Set<Dish> dishSet = new HashSet<>(dishDao.findAll());
-        List <String> ingredients1 = new ArrayList<>();
-        ingredients1.add("cabbage");
-        ingredients1.add("potato");
-        List <String> ingredients2 = new ArrayList<>();
-        ingredients2.add("cabbage");
-        ingredients2.add("tomatoes");
-        ingredients2.add("garlic");
-        List <String> ingredients3 = new ArrayList<>();
-        ingredients3.add("potato");
+        List <IngredientName> ingredients1 = new ArrayList<>();
+        ingredients1.add(IngredientName.carrot);
+        ingredients1.add(IngredientName.salt);
+        List <IngredientName> ingredients2 = new ArrayList<>();
+        ingredients2.add(IngredientName.sugar);
+        ingredients2.add(IngredientName.pork);
+        ingredients2.add(IngredientName.onion);
+        List <IngredientName> ingredients3 = new ArrayList<>();
+        ingredients3.add(IngredientName.salt);
 
         Dish dish = new Dish();
         dish.setName("Plov");
@@ -75,9 +72,9 @@ public class DishController {
         }
     }
 
-    private List<Ingredient> createIngredient(List <String> ingredients) {
+    private List<Ingredient> createIngredient(List <IngredientName> ingredients) {
         List<Ingredient> result = new ArrayList<>();
-        for (String ingredientName : ingredients) {
+        for (IngredientName ingredientName : ingredients) {
             result.add(hIngredientDao.findByName(ingredientName));
         }
         return result;

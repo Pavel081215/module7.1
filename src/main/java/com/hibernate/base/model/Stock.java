@@ -3,11 +3,22 @@ package com.hibernate.base.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "stock")
 public class Stock {
+
+    public Stock() {
+
+    }
+
+    public Stock(Ingredient ingredient) {
+        List<Ingredient> ingredients = new ArrayList<>();
+        ingredients.add(ingredient);
+    }
+
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
@@ -49,7 +60,15 @@ public class Stock {
     }
 
 
-
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Stock{");
+        sb.append("id=").append(id);
+        sb.append(", ingredients=").append(ingredients);
+        sb.append(", name='").append(name).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
 
 

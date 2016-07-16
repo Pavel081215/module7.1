@@ -3,6 +3,7 @@ package com.hibernate.base.dao.hibernate;
 import com.hibernate.base.dao.IngredientDao;
 import com.hibernate.base.model.Employee;
 import com.hibernate.base.model.Ingredient;
+import com.hibernate.base.model.IngredientName;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -50,10 +51,11 @@ public class HIngredientDao implements IngredientDao {
     }
 
     @Override
-    public Ingredient findByName(String name) {
+    public Ingredient findByName(IngredientName name) {
         Session session = sessionFactory.getCurrentSession();
         Query query = session.createQuery("select  e from Ingredient e  where  e.name like :name");
         query.setParameter("name", name);
-        return (Ingredient) query.uniqueResult();
+        Ingredient ingredient = (Ingredient) query.uniqueResult();
+        return ingredient;
     }
 }

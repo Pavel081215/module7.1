@@ -1,6 +1,7 @@
 package com.hibernate.base;
 
 import com.hibernate.base.controller.*;
+import com.hibernate.base.model.IngredientName;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -64,20 +65,15 @@ public class Main {
             orderController.remove();
             employeeController.removeAll();
             stonecontroller.remove();
+            menucontroller.removeAll();
             dishController.removeAll();
-
             ingredientcontroller.removeAll();
-
 
         }
         if (saveInit) {
             ingredientcontroller.createIngredient();
-
-
             employeeController.createEmployee();
-
             dishController.createDish();
-
             List<String> dishes2 = new ArrayList<>();
             dishes2.add("Soup");
             dishes2.add("Compot");
@@ -91,13 +87,18 @@ public class Main {
             List<String> ingredients = new ArrayList<>();
             ingredients.add("cabbage");
             ingredients.add("tomatoes");
-            stonecontroller.createStoke(ingredients);
-
+           /* stonecontroller.createStoke(IngredientName);*/
             menucontroller.createMenu();
-
         }
+        /*ingredientcontroller.createIngredient();
+        ingredientcontroller.print(IngredientName.cabbage);
+        List<IngredientName> ingredientNameList = new ArrayList<>();
+        ingredientNameList.add(IngredientName.cabbage);
+        stonecontroller.createStoke(ingredientNameList);
+        stonecontroller.print();*/
 
-
+        ingredientcontroller.createIngredient();
+       stonecontroller.addOneIngredient(ingredientcontroller.getIngredientByName(IngredientName.beef));
 
     }
 }

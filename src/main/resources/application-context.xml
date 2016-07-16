@@ -9,8 +9,8 @@
         <property name="employeeController" ref="controller"/>
         <property name="dishController" ref="controllerDish"/>
         <property name="orderController" ref="controllerOrders"/>
-        <property name="removeInit" value="true"/>
-        <property name="saveInit" value="true"/>
+        <property name="removeInit" value="false"/>
+        <property name="saveInit" value="false"/>
 
     </bean>
 
@@ -54,6 +54,8 @@
     <bean name="hmenudao" class="com.hibernate.base.dao.hibernate.HMemuDao"/>
 
     <bean name="menucontroller" class="com.hibernate.base.controller.MenuController"/>
+
+    <bean name="stockServiceImp" class="com.hibernate.base.service.StockServiceImp"/>
 
 </beans>
 

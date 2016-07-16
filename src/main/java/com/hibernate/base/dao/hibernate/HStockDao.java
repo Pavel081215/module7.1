@@ -26,13 +26,13 @@ public class HStockDao implements StockDao {
     }
     @Transactional
     @Override
-    public Employee load(Long id) {
-        return null;
+    public Stock load(Long id) {
+        return sessionFactory.getCurrentSession().load(Stock.class ,id);
     }
     @Transactional
     @Override
     public List<Stock> findAll() {
-        return sessionFactory.getCurrentSession().createQuery("select e from Stoke e").list() ;
+        return sessionFactory.getCurrentSession().createQuery("select e from Stock e").list() ;
     }
     @Transactional
     @Override
@@ -48,7 +48,7 @@ public class HStockDao implements StockDao {
     @Override
     public Stock findByName(String name) {
         Session session = sessionFactory.getCurrentSession();
-        Query query = session.createQuery("select  e from Stone e  where  e.name like :name");
+        Query query = session.createQuery("select  e from Stock e  where  e.name like :name");
         query.setParameter("name", name);
         return (Stock) query.uniqueResult();
     }

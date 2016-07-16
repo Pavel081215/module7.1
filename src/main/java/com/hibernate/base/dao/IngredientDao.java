@@ -3,6 +3,7 @@ package com.hibernate.base.dao;
 import com.hibernate.base.model.Employee;
 import com.hibernate.base.model.Ingredient;
 
+import com.hibernate.base.model.IngredientName;
 import com.hibernate.base.model.Stock;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -26,5 +27,5 @@ public interface IngredientDao {
     void removeAll();
 
     @Transactional
-    Ingredient findByName(String name);
+    Ingredient findByName(IngredientName name);
 }

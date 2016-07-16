@@ -1,14 +1,15 @@
-package com.hibernate.base.dao;
+package com.hibernate.base.service.serviceInterface;
 
-import com.hibernate.base.model.Dish;
-import com.hibernate.base.model.Employee;
-import com.hibernate.base.model.OrderName;
+import com.hibernate.base.model.Ingredient;
 import com.hibernate.base.model.Stock;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-public interface StockDao {
+/**
+ * Created by Pavel on 16.07.2016.
+ */
+public interface StockInterface {
     @Transactional
     void save(Stock stock);
 
@@ -16,7 +17,6 @@ public interface StockDao {
     Stock load(Long id);
 
     @Transactional
-
     List<Stock> findAll();
 
     @Transactional
@@ -27,4 +27,8 @@ public interface StockDao {
 
     @Transactional
     Stock findByName(String name);
+
+    @Transactional
+    void addOneIngredient(Ingredient ingredient);
 }
+
