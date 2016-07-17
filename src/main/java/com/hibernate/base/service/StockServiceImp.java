@@ -63,11 +63,7 @@ public class StockServiceImp implements StockInterface {
     @Transactional
     @Override
     public void addOneIngredient(Ingredient ingredient) {
-        Stock stock = stockDao.load(1l);
-        if (stock == null) {
-            stock = new Stock(ingredient);
-        }
-       /* stock.getIngredients().add(ingredient);*/
-        stockDao.save(stock);
+
+
     }
 }

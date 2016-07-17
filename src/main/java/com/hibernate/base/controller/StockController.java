@@ -28,11 +28,12 @@ public class StockController {
 
 
     @Transactional
-    public void createStoke(List<IngredientName> ingredient) {
-     /*   Stock stock = new Stock();
-        stock.setName("Common");
-        stock.setIngredients(createIngredient(ingredient));
-        stockServiceImp.save(stock);*/
+    public void createStoke() {
+        Stock stock = new Stock();
+        stock.setQuantity(10l);
+        stock.setCost(200l);
+        stock.setNameIngredient(hIngredientDao.findByName(IngredientName.cucumber));
+        stockServiceImp.save(stock);
 
 
     }

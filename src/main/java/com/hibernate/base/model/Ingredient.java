@@ -11,6 +11,7 @@ import javax.persistence.*;
 @Entity
 
 @Table(name = "ingredient")
+
 public class Ingredient {
     @Id
     @GeneratedValue(generator = "increment")

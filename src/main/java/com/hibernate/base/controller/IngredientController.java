@@ -22,7 +22,7 @@ public class IngredientController {
         Set<Ingredient> ingredients = new HashSet<>(hIngredientDao.findAll());
 
         Ingredient ingredient = new Ingredient();
-        ingredient.setName(IngredientName.beef);
+        ingredient.setName(IngredientName.cucumber);
 
         if (!ingredients.contains(ingredient)) {
             hIngredientDao.save(ingredient);

@@ -93,6 +93,6 @@ public class Main {
             menuController.createMenu();
         }
         ingredientController.createIngredient();
-
+        stoneController.createStoke();
     }
 }

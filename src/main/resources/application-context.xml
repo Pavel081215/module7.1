@@ -6,7 +6,7 @@
        default-autowire="byName">
 
     <bean class="com.hibernate.base.Main" name="main">
-        <property name="removeInit" value="true"/>
+        <property name="removeInit" value="false"/>
         <property name="saveInit" value="false"/>
     </bean>
 
