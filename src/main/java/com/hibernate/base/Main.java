@@ -14,6 +14,11 @@ public class Main {
     private StockController stoneController;
     private IngredientController ingredientController;
     private MenuController menuController;
+    private DishInKitchenController dishInKitchenController;
+
+    public void setDishInKitchenController(DishInKitchenController dishInKitchenController) {
+        this.dishInKitchenController = dishInKitchenController;
+    }
 
     public void setMenuController(MenuController menuController) {
         this.menuController = menuController;
@@ -89,10 +94,14 @@ public class Main {
             List<String> ingredients = new ArrayList<>();
             ingredients.add("cabbage");
             ingredients.add("tomatoes");
-           /* stoneController.createStoke(IngredientName);*/
             menuController.createMenu();
+            ingredientController.createIngredient();
+            stoneController.createStoke();
         }
-        ingredientController.createIngredient();
-        stoneController.createStoke();
+
+        dishInKitchenController.createDishInKitchen();
+
+
     }
+
 }

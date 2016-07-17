@@ -51,6 +51,13 @@
 
     <bean name="stockServiceImp" class="com.hibernate.base.service.StockServiceImp"/>
 
+
+    <bean name="dishInKitchenDao" class="com.hibernate.base.dao.hibernate.HDishInKichenDao"/>
+
+    <bean name="dishInKitchenServiceImp" class="com.hibernate.base.service.DishInKitchenServiceImp"/>
+
+    <bean name="dishInKitchenController" class="com.hibernate.base.controller.DishInKitchenController"/>
+
 </beans>
 
 

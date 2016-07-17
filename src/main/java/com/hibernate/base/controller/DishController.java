@@ -28,15 +28,18 @@ public class DishController {
     @Transactional
     public void createDish() {
         Set<Dish> dishSet = new HashSet<>(hDishDao.findAll());
+
         List <IngredientName> ingredients1 = new ArrayList<>();
         ingredients1.add(IngredientName.carrot);
         ingredients1.add(IngredientName.salt);
+
         List <IngredientName> ingredients2 = new ArrayList<>();
         ingredients2.add(IngredientName.sugar);
         ingredients2.add(IngredientName.pork);
         ingredients2.add(IngredientName.onion);
+
         List <IngredientName> ingredients3 = new ArrayList<>();
-        ingredients3.add(IngredientName.salt);
+        ingredients3.add(IngredientName.cucumber);
 
         Dish dish = new Dish();
         dish.setName("Plov");
