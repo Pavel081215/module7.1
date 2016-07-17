@@ -29,10 +29,10 @@ public class StockController {
 
     @Transactional
     public void createStoke(List<IngredientName> ingredient) {
-        Stock stock = new Stock();
+     /*   Stock stock = new Stock();
         stock.setName("Common");
         stock.setIngredients(createIngredient(ingredient));
-        stockServiceImp.save(stock);
+        stockServiceImp.save(stock);*/
 
 
     }

@@ -16,32 +16,32 @@ import java.util.List;
  */
 public class OrderController {
 
-    private OrderNameDao orderNameDao;
-    private EmployeeDao employeeDao;
-    private DishDao dishDao;
+    private OrderNameDao hOrderDao;
+    private EmployeeDao hEmployeeDao;
+    private DishDao hDishDao;
 
-    public void setEmployeeDao(EmployeeDao employeeDao) {
-        this.employeeDao = employeeDao;
+    public void sethEmployeeDao(EmployeeDao hEmployeeDao) {
+        this.hEmployeeDao = hEmployeeDao;
     }
 
-    public void setDishDao(DishDao dishDao) {
-        this.dishDao = dishDao;
+    public void sethDishDao(DishDao hDishDao) {
+        this.hDishDao = hDishDao;
     }
 
 
-    public void setOrderNameDao(OrderNameDao orderNameDao) {
-        this.orderNameDao = orderNameDao;
+    public void sethOrderDao(OrderNameDao hOrderDao) {
+        this.hOrderDao = hOrderDao;
     }
 
     @Transactional
     public void createOrder(String waiterName, List<String> dishes) {
         OrderName orderName = new OrderName();
-        orderName.setWaiter(employeeDao.findByName(waiterName));
+        orderName.setWaiter(hEmployeeDao.findByName(waiterName));
         orderName.setDishes(createDishes(dishes));
         orderName.setTable_number(2);
         orderName.setTime(new Date());
 
-        orderNameDao.save(orderName);
+        hOrderDao.save(orderName);
 
 
     }
@@ -49,14 +49,14 @@ public class OrderController {
     public List<Dish> createDishes(List<String> dishes) {
         List<Dish> result = new ArrayList<>();
         for (String dishName : dishes) {
-            result.add(dishDao.findByName(dishName));
+            result.add(hDishDao.findByName(dishName));
         }
         return result;
     }
 
     @Transactional
     public List<OrderName> getAllOrders(){
-        return orderNameDao.findAll();
+        return hOrderDao.findAll();
     }
 
     @Transactional
@@ -66,7 +66,7 @@ public class OrderController {
 
     @Transactional
     public void remove(){
-        orderNameDao.removeAll();
+        hOrderDao.removeAll();
 
     }
 

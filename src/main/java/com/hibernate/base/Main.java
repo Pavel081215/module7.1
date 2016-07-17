@@ -1,7 +1,6 @@
 package com.hibernate.base;
 
 import com.hibernate.base.controller.*;
-import com.hibernate.base.model.IngredientName;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -12,32 +11,20 @@ public class Main {
     private EmployeeController employeeController;
     private DishController dishController;
     private OrderController orderController;
-    private StockController stonecontroller;
-    private IngredientController ingredientcontroller;
-    private MenuController menucontroller;
+    private StockController stoneController;
+    private IngredientController ingredientController;
+    private MenuController menuController;
 
-    public void setMenucontroller(MenuController menucontroller) {
-        this.menucontroller = menucontroller;
+    public void setMenuController(MenuController menuController) {
+        this.menuController = menuController;
     }
 
-    public void setStonecontroller(StockController stonecontroller) {
-        this.stonecontroller = stonecontroller;
+    public void setStoneController(StockController stoneController) {
+        this.stoneController = stoneController;
     }
 
-    public void setIngredientcontroller(IngredientController ingredientcontroller) {
-        this.ingredientcontroller = ingredientcontroller;
-    }
-
-    private boolean removeInit;
-
-    private boolean saveInit;
-
-    public void setRemoveInit(boolean removeInit) {
-        this.removeInit = removeInit;
-    }
-
-    public void setSaveInit(boolean saveInit) {
-        this.saveInit = saveInit;
+    public void setIngredientController(IngredientController ingredientController) {
+        this.ingredientController = ingredientController;
     }
 
     public void setEmployeeController(EmployeeController employeeController) {
@@ -52,6 +39,20 @@ public class Main {
         this.orderController = orderController;
     }
 
+
+    public void setRemoveInit(boolean removeInit) {
+        this.removeInit = removeInit;
+    }
+
+    public void setSaveInit(boolean saveInit) {
+        this.saveInit = saveInit;
+    }
+
+    private boolean removeInit;
+
+    private boolean saveInit;
+
+
     public static void main(String[] args) {
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-context.xml", "hibernate-context.xml");
@@ -64,15 +65,15 @@ public class Main {
         if (removeInit) {
             orderController.remove();
             employeeController.removeAll();
-            stonecontroller.remove();
-            menucontroller.removeAll();
+            stoneController.remove();
+            menuController.removeAll();
             dishController.removeAll();
-            ingredientcontroller.removeAll();
+            ingredientController.removeAll();
 
         }
         if (saveInit) {
 
-            ingredientcontroller.createIngredient();
+            ingredientController.createIngredient();
             employeeController.createEmployee();
             dishController.createDish();
             List<String> dishes2 = new ArrayList<>();
@@ -88,18 +89,10 @@ public class Main {
             List<String> ingredients = new ArrayList<>();
             ingredients.add("cabbage");
             ingredients.add("tomatoes");
-           /* stonecontroller.createStoke(IngredientName);*/
-            menucontroller.createMenu();
+           /* stoneController.createStoke(IngredientName);*/
+            menuController.createMenu();
         }
-        /*ingredientcontroller.createIngredient();
-        ingredientcontroller.print(IngredientName.cabbage);
-        List<IngredientName> ingredientNameList = new ArrayList<>();
-        ingredientNameList.add(IngredientName.cabbage);
-        stonecontroller.createStoke(ingredientNameList);
-        stonecontroller.print();*/
-
-        ingredientcontroller.createIngredient();
-       stonecontroller.addOneIngredient(ingredientcontroller.getIngredientByName(IngredientName.beef));
+        ingredientController.createIngredient();
 
     }
 }

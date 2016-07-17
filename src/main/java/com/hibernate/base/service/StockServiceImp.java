@@ -24,18 +24,8 @@ public class StockServiceImp implements StockInterface {
     @Override
 
     public void save(Stock stock) {
-        List<Stock> stocks = new ArrayList<>();
-        stocks = findAll();
-        if (!stocks.isEmpty()) {
-            for (Stock stock1 : stocks) {
-                if (stock1.getName().equals(stock.getName())) {
-                    break;
-                }
-                stockDao.save(stock);
-            }
-        } else {
-            stockDao.save(stock);
-        }
+
+        stockDao.save(stock);
     }
 
     @Transactional
@@ -77,7 +67,7 @@ public class StockServiceImp implements StockInterface {
         if (stock == null) {
             stock = new Stock(ingredient);
         }
-        stock.getIngredients().add(ingredient);
+       /* stock.getIngredients().add(ingredient);*/
         stockDao.save(stock);
     }
 }

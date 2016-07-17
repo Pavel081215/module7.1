@@ -2,7 +2,6 @@ package com.hibernate.base.controller;
 
 import com.hibernate.base.dao.DishDao;
 import com.hibernate.base.dao.IngredientDao;
-import com.hibernate.base.dao.hibernate.HDishDao;
 import com.hibernate.base.model.*;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,19 +15,19 @@ import java.util.Set;
  */
 public class DishController {
 
-    private DishDao dishDao;
+    private DishDao hDishDao;
     private IngredientDao hIngredientDao;
 
     public void sethIngredientDao(IngredientDao hIngredientDao) {
         this.hIngredientDao = hIngredientDao;
     }
 
-    public void setDishDao(DishDao dishDao) {
-        this.dishDao = dishDao;
+    public void sethDishDao(DishDao hDishDao) {
+        this.hDishDao = hDishDao;
     }
     @Transactional
     public void createDish() {
-        Set<Dish> dishSet = new HashSet<>(dishDao.findAll());
+        Set<Dish> dishSet = new HashSet<>(hDishDao.findAll());
         List <IngredientName> ingredients1 = new ArrayList<>();
         ingredients1.add(IngredientName.carrot);
         ingredients1.add(IngredientName.salt);
@@ -46,7 +45,7 @@ public class DishController {
         dish.setPrice("300");
         dish.setWeigth(200.0F);
         if (!dishSet.contains(dish)) {
-            dishDao.save(dish);
+            hDishDao.save(dish);
         }
 
 
@@ -57,7 +56,7 @@ public class DishController {
         dish1.setPrice("400");
         dish1.setWeigth(200.0F);
         if (!dishSet.contains(dish1)) {
-            dishDao.save(dish1);
+            hDishDao.save(dish1);
         }
 
 
@@ -68,7 +67,7 @@ public class DishController {
         dish2.setPrice("500");
         dish2.setWeigth(900.0F);
         if (!dishSet.contains(dish2)) {
-            dishDao.save(dish2);
+            hDishDao.save(dish2);
         }
     }
 
@@ -82,14 +81,14 @@ public class DishController {
 
     @Transactional
     public List<Dish> getAllDashes(){
-        return dishDao.findAll();
+        return hDishDao.findAll();
     }
     @Transactional
     public Dish getDishByName(String name){
-        return dishDao.findByName(name);
+        return hDishDao.findByName(name);
     }
     @Transactional
     public void removeAll(){
-        dishDao.removeAll();
+        hDishDao.removeAll();
     }
 }

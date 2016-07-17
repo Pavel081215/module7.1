@@ -4,7 +4,6 @@ import com.hibernate.base.dao.EmployeeDao;
 import com.hibernate.base.model.Employee;
 import com.hibernate.base.model.Position;
 import com.hibernate.base.dao.hibernate.HEmployeeDao;
-import com.hibernate.base.model.Waiter;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
@@ -19,15 +18,15 @@ import java.util.Set;
 public class EmployeeController {
 
 
-    private EmployeeDao employeeDao;
+    private EmployeeDao hEmployeeDao;
 
-    public void setEmployeeDao(HEmployeeDao employeeDao) {
-        this.employeeDao = employeeDao;
+    public void sethEmployeeDao(HEmployeeDao hEmployeeDao) {
+        this.hEmployeeDao = hEmployeeDao;
     }
 
     @Transactional
     public void createEmployee() {
-        Set<Employee> employeeSet = new HashSet<>(employeeDao.findAll());
+        Set<Employee> employeeSet = new HashSet<>(hEmployeeDao.findAll());
         Employee employee = new Employee();
         employee.setId(1);
         employee.setName("Pavel");
@@ -36,7 +35,7 @@ public class EmployeeController {
         employee.setSurname("Zag");
         employee.setSalary(20000.0F);
         if (!employeeSet.contains(employee)) {
-            employeeDao.save(employee);
+            hEmployeeDao.save(employee);
         }
 
         Employee employee1 = new Employee();
@@ -47,24 +46,24 @@ public class EmployeeController {
         employee1.setSurname("Zagreb");
         employee1.setSalary(50000.0F);
         if (!employeeSet.contains(employee1)) {
-            employeeDao.save(employee1);
+            hEmployeeDao.save(employee1);
 
         }
     }
 
     @Transactional
     public List<Employee> getAllEmployee() {
-        return employeeDao.findAll();
+        return hEmployeeDao.findAll();
     }
 
     @Transactional
     public Employee getEmployeeByNama(String name) {
-        return employeeDao.findByName(name);
+        return hEmployeeDao.findByName(name);
     }
 
     @Transactional
     public void removeAll(){
-        employeeDao.removeAll();
+        hEmployeeDao.removeAll();
     }
 
     @Transactional

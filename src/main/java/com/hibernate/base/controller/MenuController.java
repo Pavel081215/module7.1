@@ -1,8 +1,7 @@
 package com.hibernate.base.controller;
 
 import com.hibernate.base.dao.hibernate.HDishDao;
-import com.hibernate.base.dao.hibernate.HMemuDao;
-import com.hibernate.base.dao.hibernate.HOrderNameDao;
+import com.hibernate.base.dao.hibernate.HMenuDao;
 import com.hibernate.base.model.Dish;
 import com.hibernate.base.model.Menu;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,22 +12,22 @@ import java.util.List;
 
 public class MenuController {
 
-    private HMemuDao hmenudao;
+    private HMenuDao hMenuDao;
 
-    private HDishDao hdishdao;
+    private HDishDao hDishDao;
 
-    public void setHdishdao(HDishDao hdishdao) {
-        this.hdishdao = hdishdao;
+    private OrderController orderController;
+
+    public void sethMenuDao(HMenuDao hMenuDao) {
+        this.hMenuDao = hMenuDao;
     }
 
-    public void setHmenudao(HMemuDao hmenudao) {
-        this.hmenudao = hmenudao;
+    public void sethDishDao(HDishDao hDishDao) {
+        this.hDishDao = hDishDao;
     }
 
-    private OrderController controllerOrders;
-
-    public void setControllerMenu(OrderController controllerOrders) {
-        this.controllerOrders = controllerOrders;
+    public void setOrderController(OrderController orderController) {
+        this.orderController = orderController;
     }
 
     @Transactional
@@ -39,7 +38,7 @@ public class MenuController {
         Menu menu = new Menu();
         menu.setName("Super");
         menu.setDishs(createDishes(dish));
-        hmenudao.save(menu);
+        hMenuDao.save(menu);
     }
 
 
@@ -47,14 +46,14 @@ public class MenuController {
     public List<Dish> createDishes(List<String> dishes) {
         List<Dish> result = new ArrayList<>();
         for (String dishName : dishes) {
-            result.add(hdishdao.findByName(dishName));
+            result.add(hDishDao.findByName(dishName));
         }
         return result;
     }
 
     @Transactional
     public List<Menu> getAllMenu() {
-        return hmenudao.findAll();
+        return hMenuDao.findAll();
     }
 
     @Transactional
@@ -64,7 +63,7 @@ public class MenuController {
 
     @Transactional
     public void removeAll() {
-        hmenudao.removeAll();
+        hMenuDao.removeAll();
 
     }
 

@@ -23,8 +23,7 @@ public class IngredientController {
 
         Ingredient ingredient = new Ingredient();
         ingredient.setName(IngredientName.beef);
-        ingredient.setCost(20);
-        ingredient.setQuantity(50);
+
         if (!ingredients.contains(ingredient)) {
             hIngredientDao.save(ingredient);
         }

@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 
-public class HMemuDao implements MenuDao {
+public class HMenuDao implements MenuDao {
 
     private SessionFactory sessionFactory;
 

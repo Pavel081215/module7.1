@@ -6,54 +6,48 @@
        default-autowire="byName">
 
     <bean class="com.hibernate.base.Main" name="main">
-        <property name="employeeController" ref="controller"/>
-        <property name="dishController" ref="controllerDish"/>
-        <property name="orderController" ref="controllerOrders"/>
-        <property name="removeInit" value="false"/>
+        <property name="removeInit" value="true"/>
         <property name="saveInit" value="false"/>
+    </bean>
+
+    <bean name="employeeController" class="com.hibernate.base.controller.EmployeeController">
 
     </bean>
 
-    <bean name="controller" class="com.hibernate.base.controller.EmployeeController">
-        <property name="employeeDao" ref="hemployeeydao"/>
-    </bean>
+    <bean name="hEmployeeDao" class="com.hibernate.base.dao.hibernate.HEmployeeDao">
 
-    <bean name="hemployeeydao" class="com.hibernate.base.dao.hibernate.HEmployeeDao">
-        <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
 
-    <bean name="controllerDish" class="com.hibernate.base.controller.DishController">
-        <property name="dishDao" ref="hdishdao"/>
+    <bean name="dishController" class="com.hibernate.base.controller.DishController">
+
     </bean>
 
-    <bean name="hdishdao" class="com.hibernate.base.dao.hibernate.HDishDao">
-        <property name="sessionFactory" ref="sessionFactory"/>
+    <bean name="hDishDao" class="com.hibernate.base.dao.hibernate.HDishDao">
+
     </bean>
 
-    <bean name="controllerOrders" class="com.hibernate.base.controller.OrderController">
-        <property name="orderNameDao" ref="horderdao"/>
-        <property name="dishDao" ref="hdishdao"/>
-        <property name="employeeDao" ref="hemployeeydao"/>
+    <bean name="orderController" class="com.hibernate.base.controller.OrderController">
+
     </bean>
 
-    <bean name="horderdao" class="com.hibernate.base.dao.hibernate.HOrderNameDao">
-        <property name="sessionFactory" ref="sessionFactory"/>
+    <bean name="hOrderDao" class="com.hibernate.base.dao.hibernate.HOrderNameDao">
+
     </bean>
 
 
     <bean name="stockDao" class="com.hibernate.base.dao.hibernate.HStockDao"/>
 
-     <bean name="stonecontroller" class="com.hibernate.base.controller.StockController"/>
+    <bean name="stoneController" class="com.hibernate.base.controller.StockController"/>
 
     <bean name="hIngredientDao" class="com.hibernate.base.dao.hibernate.HIngredientDao"/>
 
-    <bean name="ingredientcontroller" class="com.hibernate.base.controller.IngredientController"/>
+    <bean name="ingredientController" class="com.hibernate.base.controller.IngredientController"/>
 
 
-    <bean name="hmenudao" class="com.hibernate.base.dao.hibernate.HMemuDao"/>
+    <bean name="hMenuDao" class="com.hibernate.base.dao.hibernate.HMenuDao"/>
 
-    <bean name="menucontroller" class="com.hibernate.base.controller.MenuController"/>
+    <bean name="menuController" class="com.hibernate.base.controller.MenuController"/>
 
     <bean name="stockServiceImp" class="com.hibernate.base.service.StockServiceImp"/>
 
