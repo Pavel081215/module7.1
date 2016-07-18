@@ -40,7 +40,6 @@ public class DishInKitchenController {
         DishInKitchen dishInKitchen = new DishInKitchen();
         dishInKitchen.setCook(hEmployeeDao.findByName("Ivan"));
         dishInKitchen.setDishes_id(hDishDao.findByName("Plov"));
-
         dishInKitchenServiceImp.save(dishInKitchen);
 
     }

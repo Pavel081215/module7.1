@@ -26,11 +26,11 @@ public class DishController {
     public void createDish() {
         Dish dish = new Dish();
         Map<Ingredient,Long> recipes = new HashMap<>();
-        recipes.put(hIngredientDao.findByName(IngredientName.sugar),100l);
-        recipes.put(hIngredientDao.findByName(IngredientName.salmon),200l);
-        recipes.put(hIngredientDao.findByName(IngredientName.cabbage),300l);
-        recipes.put(hIngredientDao.findByName(IngredientName.tomatoes),400l);
-        recipes.put(hIngredientDao.findByName(IngredientName.beef),500l);
+        recipes.put(hIngredientDao.findByName(IngredientName.sugar),900l);
+        recipes.put(hIngredientDao.findByName(IngredientName.cucumber),900l);
+        recipes.put(hIngredientDao.findByName(IngredientName.onion),1000l);
+       /* recipes.put(hIngredientDao.findByName(IngredientName.tomatoes),400l);
+        recipes.put(hIngredientDao.findByName(IngredientName.beef),500l);*/
         dish.setName("Plov");
         dish.setWeigth(1000.0F);
         dish.setPrice("6000");
@@ -40,7 +40,7 @@ public class DishController {
 
 
 
-        Dish dish1 = new Dish();
+       /* Dish dish1 = new Dish();
         Map<Ingredient,Long> recipes1 = new HashMap<>();
         recipes1.put(hIngredientDao.findByName(IngredientName.sugar),1000l);
         recipes1.put(hIngredientDao.findByName(IngredientName.salmon),2000l);
@@ -67,7 +67,7 @@ public class DishController {
         dish2.setPrice("15000");
         dish2.setDishCategory(DishCategory.first);
         dish2.setRecipes(recipes2);
-        hDishDao.save(dish2);
+        hDishDao.save(dish2);*/
 
 
     }

@@ -100,11 +100,13 @@ public class Main {
             ingredientController.createIngredient();
             stoneController.createStoke();
             dishInKitchenController.createDishInKitchen();
-            stoneController.createStoke();
+
         }
-
-
-
+       /* ingredientController.createIngredient();
+        employeeController.createEmployee();
+        stoneController.createStoke();
+        dishController.createDish();
+        dishInKitchenController.createDishInKitchen();*/
     }
 
 }

@@ -30,21 +30,21 @@ public class StockController {
     @Transactional
     public void createStoke() {
         Stock stock = new Stock();
-        stock.setQuantity(10l);
-        stock.setCost(200l);
+        stock.setQuantity(1000l);
+        stock.setCost(2l);
         stock.setNameIngredient(hIngredientDao.findByName(IngredientName.cucumber));
         stockServiceImp.save(stock);
 
 
         Stock stock1 = new Stock();
-        stock1.setQuantity(20l);
-        stock1.setCost(300l);
+        stock1.setQuantity(1000l);
+        stock1.setCost(3l);
         stock1.setNameIngredient(hIngredientDao.findByName(IngredientName.sugar));
         stockServiceImp.save(stock1);
 
         Stock stock2 = new Stock();
-        stock2.setQuantity(50l);
-        stock2.setCost(700l);
+        stock2.setQuantity(1000l);
+        stock2.setCost(7l);
         stock2.setNameIngredient(hIngredientDao.findByName(IngredientName.onion));
         stockServiceImp.save(stock2);
 
