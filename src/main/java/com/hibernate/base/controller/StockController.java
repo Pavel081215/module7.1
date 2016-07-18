@@ -36,6 +36,19 @@ public class StockController {
         stockServiceImp.save(stock);
 
 
+        Stock stock1 = new Stock();
+        stock1.setQuantity(20l);
+        stock1.setCost(300l);
+        stock1.setNameIngredient(hIngredientDao.findByName(IngredientName.sugar));
+        stockServiceImp.save(stock1);
+
+        Stock stock2 = new Stock();
+        stock2.setQuantity(50l);
+        stock2.setCost(700l);
+        stock2.setNameIngredient(hIngredientDao.findByName(IngredientName.onion));
+        stockServiceImp.save(stock2);
+
+
     }
 
     @Transactional
@@ -51,10 +64,9 @@ public class StockController {
     public List<Stock> getAllStock() {
         return stockServiceImp.findAll();
     }
-
     @Transactional
     public void print() {
-        System.out.println("printVVVV");
+
         getAllStock().forEach(System.out::println);
     }
 

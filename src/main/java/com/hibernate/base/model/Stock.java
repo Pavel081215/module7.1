@@ -59,26 +59,6 @@ public class Stock {
         this.quantity = quantity;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Stock stock = (Stock) o;
-
-        if (cost != stock.cost) return false;
-        if (quantity != stock.quantity) return false;
-        return !(nameIngredient != null ? !nameIngredient.equals(stock.nameIngredient) : stock.nameIngredient != null);
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = nameIngredient != null ? nameIngredient.hashCode() : 0;
-        result = 31 * result + (int) (cost ^ (cost >>> 32));
-        result = 31 * result + (int) (quantity ^ (quantity >>> 32));
-        return result;
-    }
 
     @Override
     public String toString() {
@@ -89,6 +69,22 @@ public class Stock {
         sb.append(", quantity=").append(quantity);
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Stock stock = (Stock) o;
+
+        return !(nameIngredient != null ? !nameIngredient.equals(stock.nameIngredient) : stock.nameIngredient != null);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return nameIngredient != null ? nameIngredient.hashCode() : 0;
     }
 }
 

@@ -9610,7 +9610,7 @@ java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc4.Jdbc4Conne
 2016-07-17 19:48:31 TRACE EnumType:419 - Returning [cleaner] as column [position5_3_]
 2016-07-17 19:48:31 TRACE BasicExtractor:61 - extracted value ([salary6_3_] : [FLOAT]) - [50000.0]
 2016-07-17 19:48:31 TRACE BasicExtractor:61 - extracted value ([surname7_3_] : [VARCHAR]) - [Zagreb]
-2016-07-17 19:48:31 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#1]
+2016-07-17 19:48:31 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#1]
 2016-07-17 19:48:31 DEBUG SQL:92 - select ordernames0_.employee_id as employee4_7_0_, ordernames0_.id as id1_7_0_, ordernames0_.id as id1_7_1_, ordernames0_.table_number as table_nu2_7_1_, ordernames0_.time as time3_7_1_, ordernames0_.employee_id as employee4_7_1_ from OrderName ordernames0_ where ordernames0_.employee_id=?
 2016-07-17 19:48:31 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
 2016-07-17 19:48:31 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
@@ -9959,7 +9959,7 @@ java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc4.Jdbc4Conne
 2016-07-17 20:12:10 TRACE EnumType:419 - Returning [cleaner] as column [position5_4_]
 2016-07-17 20:12:10 TRACE BasicExtractor:61 - extracted value ([salary6_4_] : [FLOAT]) - [50000.0]
 2016-07-17 20:12:10 TRACE BasicExtractor:61 - extracted value ([surname7_4_] : [VARCHAR]) - [Zagreb]
-2016-07-17 20:12:10 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#1]
+2016-07-17 20:12:10 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#1]
 2016-07-17 20:12:10 DEBUG SQL:92 - select ordernames0_.employee_id as employee4_8_0_, ordernames0_.id as id1_8_0_, ordernames0_.id as id1_8_1_, ordernames0_.table_number as table_nu2_8_1_, ordernames0_.time as time3_8_1_, ordernames0_.employee_id as employee4_8_1_ from OrderName ordernames0_ where ordernames0_.employee_id=?
 2016-07-17 20:12:10 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
 2016-07-17 20:12:10 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
@@ -11942,7 +11942,7 @@ java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc4.Jdbc4Conne
 2016-07-17 20:36:30 TRACE EnumType:419 - Returning [cleaner] as column [position5_4_]
 2016-07-17 20:36:30 TRACE BasicExtractor:61 - extracted value ([salary6_4_] : [FLOAT]) - [50000.0]
 2016-07-17 20:36:30 TRACE BasicExtractor:61 - extracted value ([surname7_4_] : [VARCHAR]) - [Zagreb]
-2016-07-17 20:36:30 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#1]
+2016-07-17 20:36:30 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#1]
 2016-07-17 20:36:30 DEBUG SQL:92 - select ordernames0_.employee_id as employee4_8_0_, ordernames0_.id as id1_8_0_, ordernames0_.id as id1_8_1_, ordernames0_.table_number as table_nu2_8_1_, ordernames0_.time as time3_8_1_, ordernames0_.employee_id as employee4_8_1_ from OrderName ordernames0_ where ordernames0_.employee_id=?
 2016-07-17 20:36:30 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
 2016-07-17 20:36:30 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?

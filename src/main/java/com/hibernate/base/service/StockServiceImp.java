@@ -24,8 +24,29 @@ public class StockServiceImp implements StockInterface {
     @Override
 
     public void save(Stock stock) {
-
-        stockDao.save(stock);
+        List<Stock> stocks = stockDao.findAll();
+        if (stocks.isEmpty()) {
+            stockDao.save(stock);
+        } else {
+            boolean temp = false;
+            for (Stock stock1 : stocks) {
+                if (stock1.equals(stock)) {
+                    temp = true;
+                }
+            }
+            if (temp) {
+                for (Stock stock1 : stocks) {
+                    if (stock1.equals(stock)) {
+                        long temp1 = stock.getQuantity() + stock1.getQuantity();
+                        stock1.setQuantity(temp1);
+                        stock1.setCost(stock.getCost());
+                        stockDao.save(stock1);
+                    }
+                }
+            } else {
+                stockDao.save(stock);
+            }
+        }
     }
 
     @Transactional

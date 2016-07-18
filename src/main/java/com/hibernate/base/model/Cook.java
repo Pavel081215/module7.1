@@ -19,14 +19,14 @@ public class Cook extends Employee {
     @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "employee_id")
     @Fetch(FetchMode.JOIN)
-    private List<DishInKitchen> orderNames;
+    private List<DishInKitchen> coockedDishes;
 
-    public List<DishInKitchen> getOrderNames() {
-        return orderNames;
+    public List<DishInKitchen> getCoockedDishes() {
+        return coockedDishes;
     }
 
-    public void setOrderNames(List<DishInKitchen> orderNames) {
-        this.orderNames = orderNames;
+    public void setCoockedDishes(List<DishInKitchen> coockedDishes) {
+        this.coockedDishes = coockedDishes;
     }
 
     @Override
@@ -37,14 +37,14 @@ public class Cook extends Employee {
 
         Cook cook = (Cook) o;
 
-        return !(orderNames != null ? !orderNames.equals(cook.orderNames) : cook.orderNames != null);
+        return !(coockedDishes != null ? !coockedDishes.equals(cook.coockedDishes) : cook.coockedDishes != null);
 
     }
 
     @Override
     public int hashCode() {
         int result = super.hashCode();
-        result = 31 * result + (orderNames != null ? orderNames.hashCode() : 0);
+        result = 31 * result + (coockedDishes != null ? coockedDishes.hashCode() : 0);
         return result;
     }
 
@@ -52,7 +52,7 @@ public class Cook extends Employee {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Cook{");
-        sb.append("orderNames=").append(orderNames);
+        sb.append("coockedDishes=").append(coockedDishes);
         sb.append('}');
         return sb.toString();
     }

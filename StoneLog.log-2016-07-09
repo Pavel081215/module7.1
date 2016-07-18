@@ -708,7 +708,7 @@
 2016-07-09 16:36:35 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:36:35 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:36:35 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:36:35 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:36:35 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:36:35 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 16:36:35 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 16:36:35 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -787,7 +787,7 @@
 2016-07-09 16:36:35 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 16:36:35 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 16:36:35 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:36:35 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:36:35 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:36:35 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 16:36:35 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 16:36:35 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -1049,7 +1049,7 @@
 2016-07-09 16:38:23 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:38:23 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:38:23 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:38:23 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:38:23 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:38:23 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 16:38:23 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 16:38:23 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -1128,7 +1128,7 @@
 2016-07-09 16:38:23 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 16:38:23 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 16:38:23 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:38:23 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:38:23 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:38:23 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 16:38:23 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 16:38:23 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -1280,7 +1280,7 @@
 2016-07-09 16:40:14 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:40:14 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:40:14 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:40:14 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:40:14 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:40:14 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
 2016-07-09 16:40:14 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [1]
 2016-07-09 16:40:14 TRACE EnumType:419 - Returning [second] as column [dish_cat2_0_]
@@ -1306,7 +1306,7 @@
 2016-07-09 16:40:14 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:40:14 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:40:14 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:40:14 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:40:14 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:40:14 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 16:40:14 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 16:40:14 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -1393,7 +1393,7 @@
 2016-07-09 16:40:14 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 16:40:14 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 16:40:14 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:40:14 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:40:14 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:40:14 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 16:40:14 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 16:40:14 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -1700,7 +1700,7 @@
 2016-07-09 16:41:11 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:41:11 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:41:11 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:41:11 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:41:11 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:41:11 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 16:41:11 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 16:41:11 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -1779,7 +1779,7 @@
 2016-07-09 16:41:11 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 16:41:11 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 16:41:11 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:41:11 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:41:11 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:41:11 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 16:41:11 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 16:41:11 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -1965,7 +1965,7 @@
 2016-07-09 16:57:52 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:57:52 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:57:52 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:57:52 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:57:52 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:57:52 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 16:57:52 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 16:57:52 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -2044,7 +2044,7 @@
 2016-07-09 16:57:52 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 16:57:52 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 16:57:52 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:57:52 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:57:52 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:57:52 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 16:57:52 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 16:57:52 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -2207,7 +2207,7 @@
 2016-07-09 16:58:34 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:58:34 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:58:34 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:58:34 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:58:34 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:58:34 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 16:58:34 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 16:58:34 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -2286,7 +2286,7 @@
 2016-07-09 16:58:35 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 16:58:35 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 16:58:35 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:58:35 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:58:35 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:58:35 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 16:58:35 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 16:58:35 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -2548,7 +2548,7 @@
 2016-07-09 16:59:07 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:59:07 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:59:07 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:59:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:59:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:59:07 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 16:59:07 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 16:59:07 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -2627,7 +2627,7 @@
 2016-07-09 16:59:07 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 16:59:07 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 16:59:07 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:59:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:59:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:59:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 16:59:07 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 16:59:07 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -2756,7 +2756,7 @@
 2016-07-09 16:59:40 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:59:40 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:59:40 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:59:40 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:59:40 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:59:40 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_
 2016-07-09 16:59:40 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [1]
 2016-07-09 16:59:40 TRACE EnumType:419 - Returning [second] as column [dish_cat2_0_]
@@ -2782,7 +2782,7 @@
 2016-07-09 16:59:40 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 16:59:40 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 16:59:40 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:59:40 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:59:40 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:59:40 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 16:59:40 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 16:59:40 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -2869,7 +2869,7 @@
 2016-07-09 16:59:40 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 16:59:40 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 16:59:40 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 16:59:40 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 16:59:40 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 16:59:40 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 16:59:40 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 16:59:40 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -3271,7 +3271,7 @@
 2016-07-09 17:00:25 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 17:00:25 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 17:00:25 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 17:00:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 17:00:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 17:00:25 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 17:00:25 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 17:00:25 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -3350,7 +3350,7 @@
 2016-07-09 17:00:25 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 17:00:25 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 17:00:25 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 17:00:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 17:00:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 17:00:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 17:00:25 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 17:00:25 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -3639,7 +3639,7 @@
 2016-07-09 17:01:24 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 17:01:24 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 17:01:24 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 17:01:24 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 17:01:24 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 17:01:24 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 17:01:24 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 17:01:24 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -3718,7 +3718,7 @@
 2016-07-09 17:01:24 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 17:01:24 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 17:01:24 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 17:01:24 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 17:01:24 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 17:01:24 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 17:01:24 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 17:01:24 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -3881,7 +3881,7 @@
 2016-07-09 19:11:39 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 19:11:39 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 19:11:39 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 19:11:39 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 19:11:39 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 19:11:39 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 19:11:39 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 19:11:39 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -3960,7 +3960,7 @@
 2016-07-09 19:11:39 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 19:11:39 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 19:11:39 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 19:11:39 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 19:11:39 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 19:11:39 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 19:11:39 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 19:11:39 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -4123,7 +4123,7 @@
 2016-07-09 20:02:59 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:02:59 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:02:59 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:02:59 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:02:59 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:02:59 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:02:59 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:02:59 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -4202,7 +4202,7 @@
 2016-07-09 20:02:59 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:02:59 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:02:59 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:02:59 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:02:59 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:02:59 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:02:59 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:02:59 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -4365,7 +4365,7 @@
 2016-07-09 20:04:07 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:04:07 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:04:07 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:04:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:04:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:04:07 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:04:07 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:04:07 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -4444,7 +4444,7 @@
 2016-07-09 20:04:07 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:04:07 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:04:07 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:04:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:04:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:04:07 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:04:07 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:04:07 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -4602,7 +4602,7 @@
 2016-07-09 20:04:47 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:04:47 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:04:47 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:04:47 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:04:47 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:04:47 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:04:47 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:04:47 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -4681,7 +4681,7 @@
 2016-07-09 20:04:48 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:04:48 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:04:48 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:04:48 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:04:48 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:04:48 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:04:48 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:04:48 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -4844,7 +4844,7 @@
 2016-07-09 20:05:31 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:05:31 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:05:31 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:05:31 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:05:31 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:05:31 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:05:31 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:05:31 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -4923,7 +4923,7 @@
 2016-07-09 20:05:31 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:05:31 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:05:31 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:05:31 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:05:31 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:05:31 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:05:31 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:05:31 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -5086,7 +5086,7 @@
 2016-07-09 20:06:05 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:06:05 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:06:05 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:06:05 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:06:05 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:06:05 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:06:05 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:06:05 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -5165,7 +5165,7 @@
 2016-07-09 20:06:05 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:06:05 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:06:05 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:06:05 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:06:05 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:06:05 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:06:05 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:06:05 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -5328,7 +5328,7 @@
 2016-07-09 20:08:00 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:08:00 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:08:00 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:08:00 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:08:00 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:08:00 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:08:00 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:08:00 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -5407,7 +5407,7 @@
 2016-07-09 20:08:00 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:08:00 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:08:00 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:08:00 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:08:00 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:08:00 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:08:00 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:08:00 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -5570,7 +5570,7 @@
 2016-07-09 20:08:47 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:08:47 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:08:47 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:08:47 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:08:47 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:08:47 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:08:47 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:08:47 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -5649,7 +5649,7 @@
 2016-07-09 20:08:47 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:08:47 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:08:47 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:08:47 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:08:47 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:08:47 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:08:47 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:08:47 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -5807,7 +5807,7 @@
 2016-07-09 20:10:32 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:10:32 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:10:32 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:10:32 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:10:32 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:10:32 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:10:32 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:10:32 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -5886,7 +5886,7 @@
 2016-07-09 20:10:33 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:10:33 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:10:33 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:10:33 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:10:33 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:10:33 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:10:33 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:10:33 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -6044,7 +6044,7 @@
 2016-07-09 20:10:55 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:10:55 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:10:55 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:10:55 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:10:55 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:10:55 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:10:55 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:10:55 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -6123,7 +6123,7 @@
 2016-07-09 20:10:55 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:10:55 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:10:55 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:10:55 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:10:55 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:10:55 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:10:55 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:10:55 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -6286,7 +6286,7 @@
 2016-07-09 20:11:38 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:11:38 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:11:38 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:11:38 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:11:38 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:11:38 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:11:38 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:11:38 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -6365,7 +6365,7 @@
 2016-07-09 20:11:38 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:11:38 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:11:38 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:11:38 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:11:38 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:11:38 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:11:38 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:11:38 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -6528,7 +6528,7 @@
 2016-07-09 20:12:25 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:12:25 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:12:25 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:12:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:12:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:12:25 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:12:25 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:12:25 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -6607,7 +6607,7 @@
 2016-07-09 20:12:25 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:12:25 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:12:25 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:12:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:12:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:12:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:12:25 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:12:25 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -6765,7 +6765,7 @@
 2016-07-09 20:12:56 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:12:56 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:12:56 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:12:56 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:12:56 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:12:56 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:12:56 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:12:56 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -6844,7 +6844,7 @@
 2016-07-09 20:12:56 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:12:56 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:12:56 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:12:56 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:12:56 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:12:56 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:12:56 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:12:56 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -7002,7 +7002,7 @@
 2016-07-09 20:13:12 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:13:12 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:13:12 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:13:12 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:13:12 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:13:12 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:13:12 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:13:12 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -7081,7 +7081,7 @@
 2016-07-09 20:13:12 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:13:12 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:13:12 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:13:12 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:13:12 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:13:12 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:13:12 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:13:12 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -7239,7 +7239,7 @@
 2016-07-09 20:18:25 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:18:25 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:18:25 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:18:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:18:25 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:18:25 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:18:25 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:18:25 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -7318,7 +7318,7 @@
 2016-07-09 20:18:26 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:18:26 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:18:26 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:18:26 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:18:26 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:18:26 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:18:26 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:18:26 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -7476,7 +7476,7 @@
 2016-07-09 20:18:43 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:18:43 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:18:43 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:18:43 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:18:43 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:18:43 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:18:43 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:18:43 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -7555,7 +7555,7 @@
 2016-07-09 20:18:43 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:18:43 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:18:43 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:18:43 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:18:43 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:18:43 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:18:43 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:18:43 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -7718,7 +7718,7 @@
 2016-07-09 20:21:15 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:21:15 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:21:15 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:21:15 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:21:15 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:21:15 DEBUG SQL:92 - select dish0_.id as id1_0_, dish0_.dish_category as dish_cat2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weigth as weigth5_0_ from dish dish0_ where dish0_.name like ?
 2016-07-09 20:21:15 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:21:15 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
@@ -7797,7 +7797,7 @@
 2016-07-09 20:21:15 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:21:15 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:21:15 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:21:15 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:21:15 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:21:15 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:21:15 DEBUG SQL:92 - select employee0_.id as id2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_, employee0_.DTYPE as DTYPE1_2_0_ from employee employee0_ where employee0_.id=?
 2016-07-09 20:21:15 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
@@ -7969,7 +7969,7 @@
 2016-07-09 20:22:20 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_]
 2016-07-09 20:22:20 TRACE BasicExtractor:61 - extracted value ([salary6_2_] : [FLOAT]) - [50000.0]
 2016-07-09 20:22:20 TRACE BasicExtractor:61 - extracted value ([surname7_2_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:22:20 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:22:20 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:22:20 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Soup]
 2016-07-09 20:22:20 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [2]
 2016-07-09 20:22:20 TRACE EnumType:419 - Returning [first] as column [dish_cat2_0_]
@@ -8034,7 +8034,7 @@
 2016-07-09 20:22:20 TRACE EnumType:419 - Returning [cleaner] as column [position5_2_0_]
 2016-07-09 20:22:20 TRACE BasicExtractor:61 - extracted value ([salary6_2_0_] : [FLOAT]) - [50000.0]
 2016-07-09 20:22:20 TRACE BasicExtractor:61 - extracted value ([surname7_2_0_] : [VARCHAR]) - [Zagreb]
-2016-07-09 20:22:20 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.orderNames#2]
+2016-07-09 20:22:20 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.Waiter.coockedDishes#2]
 2016-07-09 20:22:20 TRACE CollectionType:756 - Created collection wrapper: [com.hibernate.base.model.OrderName.dishes#2]
 2016-07-09 20:22:20 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
 2016-07-09 20:22:20 TRACE BasicExtractor:61 - extracted value ([DTYPE1_2_0_] : [VARCHAR]) - [Employee]
