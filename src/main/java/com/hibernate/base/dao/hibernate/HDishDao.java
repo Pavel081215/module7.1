@@ -53,6 +53,7 @@ public class HDishDao implements DishDao {
 
     @Override
     public void removeAll() {
+        sessionFactory.getCurrentSession().createQuery("delete from Recipes").executeUpdate();
         sessionFactory.getCurrentSession().createQuery("delete from Dish").executeUpdate();
     }
 }

@@ -5,10 +5,7 @@ import com.hibernate.base.dao.IngredientDao;
 import com.hibernate.base.model.*;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Pavel on 08.07.2016.
@@ -27,51 +24,52 @@ public class DishController {
     }
     @Transactional
     public void createDish() {
-        Set<Dish> dishSet = new HashSet<>(hDishDao.findAll());
-
-        List <IngredientName> ingredients1 = new ArrayList<>();
-        ingredients1.add(IngredientName.carrot);
-        ingredients1.add(IngredientName.salt);
-
-        List <IngredientName> ingredients2 = new ArrayList<>();
-        ingredients2.add(IngredientName.sugar);
-        ingredients2.add(IngredientName.pork);
-        ingredients2.add(IngredientName.onion);
-
-        List <IngredientName> ingredients3 = new ArrayList<>();
-        ingredients3.add(IngredientName.cucumber);
-
         Dish dish = new Dish();
+        Map<Ingredient,Long> recipes = new HashMap<>();
+        recipes.put(hIngredientDao.findByName(IngredientName.sugar),100l);
+        recipes.put(hIngredientDao.findByName(IngredientName.salmon),200l);
+        recipes.put(hIngredientDao.findByName(IngredientName.cabbage),300l);
+        recipes.put(hIngredientDao.findByName(IngredientName.tomatoes),400l);
+        recipes.put(hIngredientDao.findByName(IngredientName.beef),500l);
         dish.setName("Plov");
+        dish.setWeigth(1000.0F);
+        dish.setPrice("6000");
         dish.setDishCategory(DishCategory.second);
-        dish.setIngredients(createIngredient(ingredients1));
-        dish.setPrice("300");
-        dish.setWeigth(200.0F);
-        if (!dishSet.contains(dish)) {
-            hDishDao.save(dish);
-        }
+        dish.setRecipes(recipes);
+        hDishDao.save(dish);
+
 
 
         Dish dish1 = new Dish();
+        Map<Ingredient,Long> recipes1 = new HashMap<>();
+        recipes1.put(hIngredientDao.findByName(IngredientName.sugar),1000l);
+        recipes1.put(hIngredientDao.findByName(IngredientName.salmon),2000l);
+        recipes1.put(hIngredientDao.findByName(IngredientName.cabbage),3000l);
+        recipes1.put(hIngredientDao.findByName(IngredientName.tomatoes),4000l);
+        recipes1.put(hIngredientDao.findByName(IngredientName.beef),5000l);
         dish1.setName("Soup");
-        dish1.setDishCategory(DishCategory.first);
-        dish1.setIngredients(createIngredient(ingredients2));
-        dish1.setPrice("400");
-        dish1.setWeigth(200.0F);
-        if (!dishSet.contains(dish1)) {
-            hDishDao.save(dish1);
-        }
+        dish1.setWeigth(7000.0F);
+        dish1.setPrice("1000");
+        dish1.setDishCategory(DishCategory.third);
+        dish1.setRecipes(recipes1);
+        hDishDao.save(dish1);
 
 
         Dish dish2 = new Dish();
+        Map<Ingredient,Long> recipes2 = new HashMap<>();
+        recipes2.put(hIngredientDao.findByName(IngredientName.sugar),1000l);
+        recipes2.put(hIngredientDao.findByName(IngredientName.salmon),2000l);
+        recipes2.put(hIngredientDao.findByName(IngredientName.cabbage),3000l);
+        recipes2.put(hIngredientDao.findByName(IngredientName.tomatoes),4000l);
+        recipes2.put(hIngredientDao.findByName(IngredientName.beef),5000l);
         dish2.setName("Compot");
-        dish2.setDishCategory(DishCategory.third);
-        dish2.setIngredients(createIngredient(ingredients3));
-        dish2.setPrice("500");
-        dish2.setWeigth(900.0F);
-        if (!dishSet.contains(dish2)) {
-            hDishDao.save(dish2);
-        }
+        dish2.setWeigth(70000.0F);
+        dish2.setPrice("15000");
+        dish2.setDishCategory(DishCategory.first);
+        dish2.setRecipes(recipes2);
+        hDishDao.save(dish2);
+
+
     }
 
     private List<Ingredient> createIngredient(List <IngredientName> ingredients) {

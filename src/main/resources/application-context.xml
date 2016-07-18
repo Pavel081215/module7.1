@@ -6,8 +6,8 @@
        default-autowire="byName">
 
     <bean class="com.hibernate.base.Main" name="main">
-        <property name="removeInit" value="false"/>
-        <property name="saveInit" value="false"/>
+        <property name="removeInit" value="true"/>
+        <property name="saveInit" value="true"/>
     </bean>
 
     <bean name="employeeController" class="com.hibernate.base.controller.EmployeeController">

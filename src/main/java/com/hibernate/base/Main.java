@@ -69,11 +69,13 @@ public class Main {
     private void start() {
         if (removeInit) {
             orderController.remove();
+            dishInKitchenController.remove();
             employeeController.removeAll();
             stoneController.remove();
             menuController.removeAll();
             dishController.removeAll();
             ingredientController.removeAll();
+
 
         }
         if (saveInit) {
@@ -98,9 +100,8 @@ public class Main {
             ingredientController.createIngredient();
             stoneController.createStoke();
             dishInKitchenController.createDishInKitchen();
+            stoneController.createStoke();
         }
-
-        stoneController.createStoke();
 
 
 
