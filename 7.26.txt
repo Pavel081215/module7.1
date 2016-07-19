@@ -1,0 +1,147 @@
+CREATE TABLE employee(
+    id                  bigint primary key not null,
+    name                character varying,	        
+    surname             character varying,       
+    phone_number        character varying,  
+    position            character varying,
+    salary              real
+);
+
+
+CREATE TABLE ordername (
+    id                  bigint primary key not null,
+    employee_id         bigint ,        
+    table_number        integer,          
+    time                date
+   
+);
+
+alter table OrderName   add constraint  employee_id foreign key (employee_id) references employee(id); 	
+
+CREATE TABLE dish (
+    id                  bigint primary key not null,
+    name                character varying,	        
+    dish_category       character varying,       
+    price               character varying,  
+    weigth              character varying
+   
+);
+
+
+CREATE TABLE dish_to_order (
+   order_id      bigint primary key not null,
+   dish_id       bigint  not null
+     
+);
+
+alter table dish_to_order   add constraint  dish_to_order_order_id foreign key (order_id) references OrderName(id); 	
+alter table dish_to_order   add constraint  dish_to_order_dish_id foreign key (dish_id) references dish(id); 	
+
+
+
+
+
+alter table employee add column dtype  character varying;
+
+CREATE TABLE ingredient (
+     id                 bigint primary key not null,
+     name               character varying
+  
+ );
+
+
+
+CREATE TABLE ingredient_to_stock (
+   stock_id      bigint  not null,
+   ingredient_id       bigint  not null
+);
+
+
+alter table ingredient_to_stock   add constraint  dish_to_order_stock_id foreign key ( stock_id) references stock(id); 	
+alter table ingredient_to_stock   add constraint  dish_to_order_ingredient_id foreign key (ingredient_id) references ingredient (id); 
+
+
+CREATE TABLE ingredient_to_dish (
+   dish_id      bigint  not null,
+   ingredient_id       bigint  not null
+);
+
+alter table ingredient_to_dish   add constraint  dish_ingredient  foreign key ( dish_id) references dish(id); 	
+alter table ingredient_to_dish   add constraint  ingredient_dish  foreign key ( ingredient_id ) references ingredient (id); 
+
+
+CREATE TABLE   menu(
+     id                 bigint primary key not null,
+     name               character varying
+  );
+
+CREATE TABLE   dish_to_menu(
+     menu_id          bigint  not null ,
+     dish_id                bigint  not null
+  );
+
+
+alter table  dish_to_menu  add constraint  dish_menu  foreign key (  menu_id) references menu(id); 	
+alter table dish_to_menu   add constraint  menu_dish  foreign key (dish_id  ) references dish (id); 
+
+
+
+
+
+
+alter table ingredient  add column cost  bigint;
+alter table ingredient  add column quantity  bigint;
+  
+   DELETE FROM  ingredient_to_stock; 
+   DELETE FROM  ingredient; 
+
+CREATE TABLE ingredient (
+     id                 bigint primary key not null,
+     name               character varying
+  
+ );
+
+
+CREATE TABLE   stock(
+     id                 bigint primary key not null,
+     name               bigint,
+    cost     bigint,
+   quantity bigint
+
+  );
+
+
+alter table   stock  add constraint   stock_ingredient  foreign key (  name) references ingredient(id); 	
+
+CREATE TABLE DishInKitchen (
+     id                       bigint primary key not null,
+     employee_id              bigint,
+     dishes_id                bigint
+   );
+
+alter table   DishInKitchen  add constraint  DishInKitchen_employee  foreign key (   employee_id) references employee(id); 	
+
+alter table   DishInKitchen  add constraint  DishInKitchen_dish  foreign key (    dishes_id) references dish(id); 
+
+CREATE TABLE Recipes (
+     dish_id                           bigint ,
+     ingredient_id              bigint,
+     count                              bigint
+   );
+
+
+
+alter table  Recipes  add constraint  Recipes_dish  foreign key ( dish_id) references dish(id); 
+alter table  Recipes  add constraint  Recipes_ingredient  foreign key (   ingredient_id ) references ingredient(id);	
+
+
+
+
+
+
+
+
+
+
+
+
