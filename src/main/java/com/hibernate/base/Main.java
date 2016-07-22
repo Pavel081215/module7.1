@@ -60,7 +60,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-context.xml", "hibernate-context.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-context.xml", "WEB-INF/spring/appServlet/hibernate-context.xml");
         Main main = applicationContext.getBean(Main.class);
         main.start();
 
