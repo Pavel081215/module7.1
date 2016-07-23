@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 
-    public HomeController() {
+    /*public HomeController() {
     }
 
     @RequestMapping({"/order"})
@@ -36,9 +36,9 @@ public class HomeController {
     public String visitDish() {
         return "dish/dishes";
     }
-
+*/
     @RequestMapping({"/start"})
     public String visitStart() {
-        return "/start.jsp";
+        return "start";
     }
 }

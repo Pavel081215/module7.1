@@ -11,18 +11,17 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <annotation-driven/>
-    <context:component-scan base-package="com.hibernate.base"/>
 
+    <context:component-scan base-package="com.hibernate.base.controller"/>
 
-    <view-controller path="/" view-name="/start"/>
+    <view-controller path="/" view-name="start"/>
 
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <beans:property name="prefix" value="/WEB-INF/views/"/>
         <beans:property name="suffix" value=".jsp"/>
     </beans:bean>
+    <resources mapping="/resources/**" location="resources"/>
 
-
-    
-   </beans:beans>
+</beans:beans>
 
 

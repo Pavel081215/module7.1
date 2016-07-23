@@ -7,8 +7,15 @@ import com.hibernate.base.model.Employee;
 import com.hibernate.base.model.Position;
 import com.hibernate.base.dao.hibernate.HEmployeeDao;
 import com.hibernate.base.model.Waiter;
+import com.hibernate.base.service.EmployeeServiceImp;
+import com.hibernate.base.service.serviceInterface.EmployeeInterface;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -16,25 +23,25 @@ import java.util.Set;
 /**
  * Created by Pavel on 08.07.2016.
  */
-
-
+@Controller
 public class EmployeeController {
 
-    private HOrderNameDao hOrderDao;
 
-    public void sethOrderDao(HOrderNameDao hOrderDao) {
-        this.hOrderDao = hOrderDao;
+    @Autowired
+    private EmployeeServiceImp employeeServiceImp;
+
+    public void setEmployeeServiceImp(EmployeeServiceImp employeeServiceImp) {
+        this.employeeServiceImp = employeeServiceImp;
     }
+    /*  private EmployeeInterface employeeInterface;
 
-    private EmployeeDao hEmployeeDao;
+    public void setEmployeeInterface(EmployeeInterface employeeInterface) {
+        this.employeeInterface = employeeInterface;
+    }*/
 
-    public void sethEmployeeDao(EmployeeDao hEmployeeDao) {
-        this.hEmployeeDao = hEmployeeDao;
-    }
 
-    @Transactional
     public void createEmployee() {
-        Set<Employee> employeeSet = new HashSet<>(hEmployeeDao.findAll());
+     /*   Set<Employee> employeeSet = new HashSet<>(hEmployeeDao.findAll());
         Employee employee = new Waiter();
         employee.setName("Pavel");
         employee.setPhoneNumber("102333");
@@ -66,26 +73,35 @@ public class EmployeeController {
         if (!employeeSet.contains(employee3)) {
             hEmployeeDao.save(employee3);
 
-        }
+        }*/
 
     }
 
-    @Transactional
+    @RequestMapping({"/listEmployee"})
+    public ModelAndView listEmployee() {
+        ArrayList<Employee> employees = new ArrayList<>();
+        employees.addAll(employeeServiceImp.findAll());
+        ModelAndView modelView = new ModelAndView("employee/listEmployee");
+        modelView.addObject("listEmployees", employees);
+        return modelView;
+    }
+
+
     public List<Employee> getAllEmployee() {
-        return hEmployeeDao.findAll();
+        return employeeServiceImp.findAll();
     }
 
-    @Transactional
+
     public Employee getEmployeeByNama(String name) {
-        return hEmployeeDao.findByName(name);
+        return employeeServiceImp.findByName(name);
     }
 
-    @Transactional
+
     public void removeAll() {
-        hEmployeeDao.removeAll();
+        employeeServiceImp.removeAll();
     }
 
-    @Transactional
+
     public void printWaiter() {
         getAllEmployee().forEach(System.out::println);
     }

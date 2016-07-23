@@ -12,6 +12,10 @@
         http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
+
+    <context:component-scan base-package="com.hibernate.base.dao"/>
+    <context:component-scan base-package="com.hibernate.base.service"/>
+
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
     <beans:bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
