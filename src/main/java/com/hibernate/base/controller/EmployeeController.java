@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -78,7 +79,7 @@ public class EmployeeController {
     }
 
     @RequestMapping({"/listEmployee"})
-    public ModelAndView listEmployee() {
+      public ModelAndView listEmployee() {
         ArrayList<Employee> employees = new ArrayList<>();
         employees.addAll(employeeServiceImp.findAll());
         ModelAndView modelView = new ModelAndView("employee/listEmployee");
