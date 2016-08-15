@@ -35,10 +35,10 @@ public class HomeController {
     @RequestMapping({"/dish"})
     public String visitDish() {
         return "dish/dishes";
-    }
-*/
-    @RequestMapping({"/start"})
+    }*/
+
+    @RequestMapping({"/start.jsp"})
     public String visitStart() {
-        return "start";
+        return "start.jsp";
     }
 }

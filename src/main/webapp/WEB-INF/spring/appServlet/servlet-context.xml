@@ -10,11 +10,10 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <annotation-driven/>
+       <annotation-driven/>
 
-    <context:component-scan base-package="com.hibernate.base.controller"/>
-
-    <view-controller path="/" view-name="start"/>
+         <context:component-scan base-package="com.hibernate.base.controller"/>
+          <view-controller path="/" view-name="start"/>
 
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <beans:property name="prefix" value="/WEB-INF/views/"/>

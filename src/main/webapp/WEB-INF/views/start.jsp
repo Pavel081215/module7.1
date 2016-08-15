@@ -1,23 +1,41 @@
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My store</title>
-
-    <link href="start.css" rel="stylesheet" type="text/css "/>
-
+    <title>My store5555</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/resources/css/style.css">
+      <link href="../../resources/css/style.css" rel="stylesheet" type="text/css "/>
+    <link href="<c:url value="../../resources/css/style.css" />" type="text/css "/>
 
 </head>
 
 
-<body  background=" #2e62ff">
-    <a href="${pageContext.request.contextPath}/order" title="Order">Order</a>
-    <a href="${pageContext.request.contextPath}/admin" title="Admin">Admin</a>
-    <a href="${pageContext.request.contextPath}/staff" title="Staff">Staff</a>
-    <a href="${pageContext.request.contextPath}/ingredients" title="Ingredients">Ingredients</a>
-    <a href="${pageContext.request.contextPath}/dish" title="Dish">Dish</a>
-    <a href="${pageContext.request.contextPath}/listEmployee" title="listEmployee">listEmployee</a>
+<body >
 
+
+<a  href="${pageContext.request.contextPath}/order" title="Order">Order</a>
+<a href="${pageContext.request.contextPath}/admin" title="Admin">Admin</a>
+<a href="${pageContext.request.contextPath}/staff" title="Staff">Staff</a>
+<a href="${pageContext.request.contextPath}/ingredients" title="Ingredients">Ingredients</a>
+<a href="${pageContext.request.contextPath}/dish" title="Dish">Dish</a>
+<a href="${pageContext.request.contextPath}/listEmployee" title="listEmployee">listEmployee</a>
+<br/>
+<script >
+    var t = '#';
+    for (var i = 0; i < 7; i++) {
+        document.write(t + ' <br /> ');
+        t = t + '#';
+    }
+</script>
+<p>HHH</p>
+
+
+<h2>tggggggfdhdhsdfjsgjgjsjsf</h2>
 </body>
+
+
+
 </html>

@@ -200,6 +200,7 @@
                 <configuration>
                     <warName>com.hibernate.base</warName>
                     <webXml>src\main\webapp\web.xml</webXml>
+                    
                 </configuration>
             </plugin>
             <plugin>
