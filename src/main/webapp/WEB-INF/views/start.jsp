@@ -1,14 +1,16 @@
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+               pageEncoding="UTF-8" %>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My store5555</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/resources/css/style.css">
+    <title>My store3434343</title>
+   <!-- <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/resources/css/style.css">-->
       <link href="../../resources/css/style.css" rel="stylesheet" type="text/css "/>
-    <link href="<c:url value="../../resources/css/style.css" />" type="text/css "/>
+    <!--<link href="<c:url value="../../resources/css/style.css" />" type="text/css "/>-->
 
 </head>
 
@@ -30,7 +32,7 @@
         t = t + '#';
     }
 </script>
-<p>HHH</p>
+<p style="color: blueviolet">HHH</p>
 
 
 <h2>tggggggfdhdhsdfjsgjgjsjsf</h2>
