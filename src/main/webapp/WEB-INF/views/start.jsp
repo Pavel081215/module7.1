@@ -9,7 +9,7 @@
 <head>
     <title>My store3434343</title>
    <!-- <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/resources/css/style.css">-->
-      <link href="../../resources/css/style.css" rel="stylesheet" type="text/css "/>
+      <link href="d://ТомСат9/apache-tomcat-9.0.0.M9/webapps/com/hibernate/base/resources/css/style.css" rel="stylesheet" type="text/css "/>
     <!--<link href="<c:url value="../../resources/css/style.css" />" type="text/css "/>-->
 
 </head>
